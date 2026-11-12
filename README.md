@@ -7,6 +7,7 @@ import PollisKnowledge as PK
 PK.catalogue()                                   # the texts
 PK.documents("algorithms_for_decision_making")   # downloads the text once, then lists its documents
 PK.licence("algorithms_for_decision_making")     # its authors, source and licence
+PK.cover("algorithms_for_decision_making")       # the path of its cover
 ```
 
 ## Texts
@@ -19,6 +20,19 @@ PK.licence("algorithms_for_decision_making")     # its authors, source and licen
 | `algorithms_for_decision_making` | Algorithms for Decision Making | Book | Kochenderfer, Wheeler and Wray | CC BY-NC-ND 4.0 | The PDF of its authors, unchanged |
 
 The algorithms of Algorithms for Optimization and Algorithms for Decision Making are written in Julia. The catalogue, `data/catalogue.toml`, gives each text's page, source and revision. Each artifact holds `LICENCE.md`, with the text's authors, source, what it changes and its licence.
+
+## The Printed Books
+
+These books are open because their authors made them so. Each is also a printed book, and Pollis shows its cover, as its authors show it on its page, with its title, edition, authors, publisher and year, a link to the authors' page and one to the publisher's, where it is sold:
+
+| Book | Authors' page | Publisher |
+|---|---|---|
+| Dive into Deep Learning | [d2l.ai](https://d2l.ai) | [Cambridge University Press](https://www.cambridge.org/9781009389433) |
+| Probabilistic Machine Learning: An Introduction | [probml.github.io](https://probml.github.io/pml-book/book1.html) | [MIT Press](https://mitpress.mit.edu/9780262046824/probabilistic-machine-learning/) |
+| Algorithms for Optimization | [algorithmsbook.com](https://algorithmsbook.com/optimization/) | [MIT Press](https://mitpress.mit.edu/9780262058162/algorithms-for-optimization/) |
+| Algorithms for Decision Making | [algorithmsbook.com](https://algorithmsbook.com/decisionmaking/) | [MIT Press](https://mitpress.mit.edu/9780262047012/algorithms-for-decision-making/) |
+
+The covers, in `data/covers`, are those of the authors' pages, made smaller; they belong to their publishers and are not under the MIT License of the package.
 
 ## Licence
 

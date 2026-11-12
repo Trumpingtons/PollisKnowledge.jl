@@ -7,6 +7,9 @@
 # "markdown". `page` is the text's page on its authors' site. `download` is where its file is fetched from, at the
 # revision of `revision`. `size_mb` is the size of its artifact as downloaded, in MB. `changes` says what the artifact
 # leaves out of the text, or changes in it, when it is not the file of its authors unchanged.
+#
+# A published book has its cover, `cover`, a file of data/covers, as its authors show it on its page, at `cover_from`,
+# and `hard_copy`, the page of its publisher where the printed book is sold.
 
 [[texts]]
 id = "dive_into_deep_learning"
@@ -21,6 +24,9 @@ format = "markdown"
 licence = "CC BY-SA 4.0"
 licence_url = "https://creativecommons.org/licenses/by-sa/4.0/"
 page = "https://d2l.ai"
+cover = "dive_into_deep_learning.jpg"
+cover_from = "https://d2l.ai/_images/front-cup.jpg"
+hard_copy = "https://www.cambridge.org/9781009389433"
 download = "https://github.com/d2l-ai/d2l-en"
 revision = "b2e2ae30898a9d0126a9699ae7e441de3e272715"
 size_mb = 0.6
@@ -39,6 +45,9 @@ format = "pdf"
 licence = "CC BY-NC-ND 4.0"
 licence_url = "https://creativecommons.org/licenses/by-nc-nd/4.0/"
 page = "https://probml.github.io/pml-book/book1.html"
+cover = "probabilistic_machine_learning.jpg"
+cover_from = "https://probml.github.io/pml-book/cover1.jpg"
+hard_copy = "https://mitpress.mit.edu/9780262046824/probabilistic-machine-learning/"
 download = "https://github.com/probml/pml-book/releases/download/2025-04-18/book1.pdf"
 revision = "2025-04-18"
 size_mb = 85.8
@@ -56,6 +65,9 @@ format = "pdf"
 licence = "CC BY-NC-ND 4.0"
 licence_url = "https://creativecommons.org/licenses/by-nc-nd/4.0/"
 page = "https://algorithmsbook.com/optimization/"
+cover = "algorithms_for_optimization.jpg"
+cover_from = "https://algorithmsbook.com/assets/img/afo-800.jpg"
+hard_copy = "https://mitpress.mit.edu/9780262058162/algorithms-for-optimization/"
 download = "https://drive.usercontent.google.com/download?id=1Rx7MAekKZbyNVc5B2MNfR0HXXIEJCksp&export=download&confirm=t"
 revision = "the preview of 2026-09-05 linked from the book's page"
 size_mb = 10.9
@@ -73,6 +85,9 @@ format = "pdf"
 licence = "CC BY-NC-ND 4.0"
 licence_url = "https://creativecommons.org/licenses/by-nc-nd/4.0/"
 page = "https://algorithmsbook.com/decisionmaking/"
+cover = "algorithms_for_decision_making.jpg"
+cover_from = "https://algorithmsbook.com/assets/img/afdm-800.jpg"
+hard_copy = "https://mitpress.mit.edu/9780262047012/algorithms-for-decision-making/"
 download = "https://drive.usercontent.google.com/download?id=1drcYW3iJz4wnnCqjuVwQyc5a6eC7i6cu&export=download&confirm=t"
 revision = "the PDF of 2026-09-21 linked from the book's page"
 size_mb = 10.8

@@ -15,6 +15,12 @@ const PK = PollisKnowledge
 		@test_throws ErrorException PK.catalogue_entry("islp")
 	end
 
+	@testset "Covers" begin
+		@test all(entry -> isfile(PK.cover(entry["id"])), PK.catalogue())
+		@test basename(PK.cover("algorithms_for_decision_making")) == "algorithms_for_decision_making.jpg"
+		@test all(entry -> startswith(entry["hard_copy"], "https://"), PK.catalogue())
+	end
+
 	@testset "Prose of a section" begin
 		text = "```{.python .input}\n%%tab pytorch\nimport torch\n```\n\n# Title\n:label:`sec_t`\n\n:begin_tab:`mxnet`\nMX text\n:end_tab:\n\n:begin_tab:`pytorch`\nTorch text\n:end_tab:\nEnd."
 		@test PK.d2l_prose(text) == ["", "# Title", ":label:`sec_t`", "", "", "Torch text", "End."]

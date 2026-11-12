@@ -11,6 +11,7 @@ import PollisKnowledge as PK
 PK.catalogue()                                   # the texts
 PK.documents("algorithms_for_decision_making")   # downloads the text once, then lists its documents
 PK.licence("algorithms_for_decision_making")     # its authors, source and licence
+PK.cover("algorithms_for_decision_making")       # the path of its cover
 ```
 
 The texts are those whose licence lets them be shared; a text converted from its sources, such as Dive into Deep
@@ -37,7 +38,8 @@ const ARTIFACTS_FILE = joinpath(dirname(@__DIR__), "Artifacts.toml")
 The entries of the catalogue, one per text, in its order: id, title, type (Book, Lecture Notes, Report, Manual...),
 edition, authors, publisher, year, subject, format ("pdf" or "markdown"), licence, licence_url, page (the text's page
 on its authors' site), revision, size_mb and, for some, download (where the build fetched it from) and changes (what
-the artifact leaves out of the text, or changes in it).
+the artifact leaves out of the text, or changes in it). A published book has cover (its file, see `cover`),
+cover_from (where its authors show it) and hard_copy (its publisher's page, where the printed book is sold).
 """
 catalogue() = CATALOGUE
 
@@ -52,6 +54,17 @@ end
 function text_hash(id)
 	catalogue_entry(id)
 	isfile(ARTIFACTS_FILE) ? artifact_hash(String(id), ARTIFACTS_FILE) : nothing
+end
+
+"""
+	cover(id)
+
+The path of the cover of the text `id`, as its authors show it on its page, which comes with the package; nothing for
+a text without one.
+"""
+function cover(id)
+	file = get(catalogue_entry(id), "cover", nothing)
+	file === nothing ? nothing : joinpath(dirname(@__DIR__), "data", "covers", file)
 end
 
 """
