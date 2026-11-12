@@ -33,7 +33,7 @@ const ARTIFACTS_FILE = joinpath(dirname(@__DIR__), "Artifacts.toml")
 	books()
 
 The entries of the catalogue, one per book, in its order: id, title, edition, authors, publisher, year, subject, kind
-("pdf" or "markdown"), licence, licence_url, page (the book's page on its authors' site), revision and, for some,
+("pdf" or "markdown"), licence, licence_url, page (the book's page on its authors' site), revision, size_mb and, for some,
 download (where the build fetched it from) and changes (what the artifact leaves out of the book, or changes in it).
 """
 books() = CATALOGUE

@@ -4,8 +4,8 @@
 # An id is a name SQL takes as it is: lower-case letters, digits and underscores.
 #
 # `page` is the book's page on its authors' site. `download` is where its file is fetched from, at the revision of
-# `revision`. `changes` says what the artifact leaves out of the book, or changes in it, when it is not the file of
-# its authors unchanged.
+# `revision`. `size_mb` is the size of its artifact as downloaded, in MB. `changes` says what the artifact leaves out
+# of the book, or changes in it, when it is not the file of its authors unchanged.
 
 [[books]]
 id = "dive_into_deep_learning"
@@ -21,6 +21,7 @@ licence_url = "https://creativecommons.org/licenses/by-sa/4.0/"
 page = "https://d2l.ai"
 download = "https://github.com/d2l-ai/d2l-en"
 revision = "b2e2ae30898a9d0126a9699ae7e441de3e272715"
+size_mb = 0.6
 changes = "Converted from its Markdown sources, one file a section: its code cells are left out, and the text of its tabs but that of PyTorch; its cross-references and citations are written out in words, and its figures replaced by their captions."
 
 [[books]]
@@ -37,6 +38,7 @@ licence_url = "https://creativecommons.org/licenses/by-nc-nd/4.0/"
 page = "https://probml.github.io/pml-book/book1.html"
 download = "https://github.com/probml/pml-book/releases/download/2025-04-18/book1.pdf"
 revision = "2025-04-18"
+size_mb = 85.8
 
 [[books]]
 id = "algorithms_for_optimization"
@@ -52,6 +54,7 @@ licence_url = "https://creativecommons.org/licenses/by-nc-nd/4.0/"
 page = "https://algorithmsbook.com/optimization/"
 download = "https://drive.usercontent.google.com/download?id=1Rx7MAekKZbyNVc5B2MNfR0HXXIEJCksp&export=download&confirm=t"
 revision = "the preview of 2026-09-05 linked from the book's page"
+size_mb = 10.9
 
 [[books]]
 id = "algorithms_for_decision_making"
@@ -67,3 +70,4 @@ licence_url = "https://creativecommons.org/licenses/by-nc-nd/4.0/"
 page = "https://algorithmsbook.com/decisionmaking/"
 download = "https://drive.usercontent.google.com/download?id=1drcYW3iJz4wnnCqjuVwQyc5a6eC7i6cu&export=download&confirm=t"
 revision = "the PDF of 2026-09-21 linked from the book's page"
+size_mb = 10.8
