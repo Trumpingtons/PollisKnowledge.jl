@@ -1,0 +1,84 @@
+# The books of PollisBooks.jl: one entry each, in the order Pollis lists them. Each book is an artifact of its own,
+# named by its id, downloaded the first time it is asked for: the book's files, `contents.toml`, the documents of the
+# book in their order (file, title and kind, "pdf" or "markdown"), and `LICENCE.md`, its authors, source and licence.
+# An id is a name SQL takes as it is: lower-case letters, digits and underscores.
+#
+# `page` is the book's page on its authors' site. `download` is where its file is fetched from, at the revision of
+# `revision`; a book without `download` is fetched by hand from `page` into the folder of downloads of the build, as
+# `<id>.pdf`. `changes` says what the artifact leaves out of the book, or changes in it, when it is not the file of
+# its authors unchanged.
+
+[[books]]
+id = "openintro_statistics"
+title = "OpenIntro Statistics"
+edition = "Fourth Edition"
+authors = ["David M. Diez", "Mine Çetinkaya-Rundel", "Christopher D. Barr"]
+publisher = "OpenIntro"
+year = 2019
+subject = "Statistics"
+kind = "pdf"
+licence = "CC BY-SA 3.0"
+licence_url = "https://creativecommons.org/licenses/by-sa/3.0/"
+page = "https://www.openintro.org/book/os/"
+revision = "The PDF of the fourth edition that OpenIntro distributes through leanpub.com/os"
+
+[[books]]
+id = "dive_into_deep_learning"
+title = "Dive into Deep Learning"
+edition = "Release 1.0.3"
+authors = ["Aston Zhang", "Zachary C. Lipton", "Mu Li", "Alexander J. Smola"]
+publisher = "Cambridge University Press"
+year = 2023
+subject = "Deep Learning"
+kind = "markdown"
+licence = "CC BY-SA 4.0"
+licence_url = "https://creativecommons.org/licenses/by-sa/4.0/"
+page = "https://d2l.ai"
+download = "https://github.com/d2l-ai/d2l-en"
+revision = "b2e2ae30898a9d0126a9699ae7e441de3e272715"
+changes = "Converted from its Markdown sources, one file a section: its code cells are left out, and the text of its tabs but that of PyTorch; its cross-references and citations are written out in words, and its figures replaced by their captions."
+
+[[books]]
+id = "probabilistic_machine_learning"
+title = "Probabilistic Machine Learning: An Introduction"
+edition = "Draft of 2025-04-18"
+authors = ["Kevin P. Murphy"]
+publisher = "MIT Press"
+year = 2022
+subject = "Machine Learning"
+kind = "pdf"
+licence = "CC BY-NC-ND 4.0"
+licence_url = "https://creativecommons.org/licenses/by-nc-nd/4.0/"
+page = "https://probml.github.io/pml-book/book1.html"
+download = "https://github.com/probml/pml-book/releases/download/2025-04-18/book1.pdf"
+revision = "2025-04-18"
+
+[[books]]
+id = "algorithms_for_optimization"
+title = "Algorithms for Optimization"
+edition = "Second Edition, preview"
+authors = ["Mykel J. Kochenderfer", "Tim A. Wheeler"]
+publisher = "MIT Press"
+year = 2027
+subject = "Optimization"
+kind = "pdf"
+licence = "CC BY-NC-ND 4.0"
+licence_url = "https://creativecommons.org/licenses/by-nc-nd/4.0/"
+page = "https://algorithmsbook.com/optimization/"
+download = "https://drive.usercontent.google.com/download?id=1Rx7MAekKZbyNVc5B2MNfR0HXXIEJCksp&export=download&confirm=t"
+revision = "The preview of 2026-09-05 linked from the book's page"
+
+[[books]]
+id = "algorithms_for_decision_making"
+title = "Algorithms for Decision Making"
+edition = "First Edition"
+authors = ["Mykel J. Kochenderfer", "Tim A. Wheeler", "Kyle H. Wray"]
+publisher = "MIT Press"
+year = 2022
+subject = "Decision Making"
+kind = "pdf"
+licence = "CC BY-NC-ND 4.0"
+licence_url = "https://creativecommons.org/licenses/by-nc-nd/4.0/"
+page = "https://algorithmsbook.com/decisionmaking/"
+download = "https://drive.usercontent.google.com/download?id=1drcYW3iJz4wnnCqjuVwQyc5a6eC7i6cu&export=download&confirm=t"
+revision = "The PDF of 2026-09-21 linked from the book's page"

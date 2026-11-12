@@ -1,0 +1,18 @@
+name = "PollisBooks"
+uuid = "20c90171-e345-48e2-b3f5-e1c5e5b81d48"
+version = "0.1.0"
+authors = ["Antonio Saragga Seabra"]
+
+[deps]
+Artifacts = "56f22d72-fd6d-98f1-02f0-08ddc0907c33"
+Pkg = "44cfe95a-1eb2-52ea-b672-e2afdf69b78f"
+TOML = "fa267f1f-6049-4f14-aa54-33bafae1ed76"
+
+[compat]
+julia = "1.10"
+
+[extras]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test"]
