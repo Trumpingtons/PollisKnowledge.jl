@@ -1,21 +1,23 @@
-# The books of PollisBooks.jl: one entry each, in the order Pollis lists them. Each book is an artifact of its own,
-# named by its id, downloaded the first time it is asked for: the book's files, `contents.toml`, the documents of the
-# book in their order (file, title and kind, "pdf" or "markdown"), and `LICENCE.md`, its authors, source and licence.
-# An id is a name SQL takes as it is: lower-case letters, digits and underscores.
+# The texts of PollisKnowledge.jl: one entry each, in the order Pollis lists them. Each text is an artifact of its own,
+# named by its id, downloaded the first time it is asked for: the text's files, `contents.toml`, its documents in
+# their order (file, title and kind, "pdf" or "markdown"), and `LICENCE.md`, its authors, source and licence. An id is
+# a name SQL takes as it is: lower-case letters, digits and underscores.
 #
-# `page` is the book's page on its authors' site. `download` is where its file is fetched from, at the revision of
-# `revision`. `size_mb` is the size of its artifact as downloaded, in MB. `changes` says what the artifact leaves out
-# of the book, or changes in it, when it is not the file of its authors unchanged.
+# `type` is what the text is: Book, Lecture Notes, Report, Manual, Article. `format` is that of its files, "pdf" or
+# "markdown". `page` is the text's page on its authors' site. `download` is where its file is fetched from, at the
+# revision of `revision`. `size_mb` is the size of its artifact as downloaded, in MB. `changes` says what the artifact
+# leaves out of the text, or changes in it, when it is not the file of its authors unchanged.
 
-[[books]]
+[[texts]]
 id = "dive_into_deep_learning"
 title = "Dive into Deep Learning"
+type = "Book"
 edition = "Release 1.0.3"
 authors = ["Aston Zhang", "Zachary C. Lipton", "Mu Li", "Alexander J. Smola"]
 publisher = "Cambridge University Press"
 year = 2023
 subject = "Deep Learning"
-kind = "markdown"
+format = "markdown"
 licence = "CC BY-SA 4.0"
 licence_url = "https://creativecommons.org/licenses/by-sa/4.0/"
 page = "https://d2l.ai"
@@ -24,15 +26,16 @@ revision = "b2e2ae30898a9d0126a9699ae7e441de3e272715"
 size_mb = 0.6
 changes = "Converted from its Markdown sources, one file a section: its code cells are left out, and the text of its tabs but that of PyTorch; its cross-references and citations are written out in words, and its figures replaced by their captions."
 
-[[books]]
+[[texts]]
 id = "probabilistic_machine_learning"
 title = "Probabilistic Machine Learning: An Introduction"
+type = "Book"
 edition = "Draft of 2025-04-18"
 authors = ["Kevin P. Murphy"]
 publisher = "MIT Press"
 year = 2022
 subject = "Machine Learning"
-kind = "pdf"
+format = "pdf"
 licence = "CC BY-NC-ND 4.0"
 licence_url = "https://creativecommons.org/licenses/by-nc-nd/4.0/"
 page = "https://probml.github.io/pml-book/book1.html"
@@ -40,15 +43,16 @@ download = "https://github.com/probml/pml-book/releases/download/2025-04-18/book
 revision = "2025-04-18"
 size_mb = 85.8
 
-[[books]]
+[[texts]]
 id = "algorithms_for_optimization"
 title = "Algorithms for Optimization"
+type = "Book"
 edition = "Second Edition, preview"
 authors = ["Mykel J. Kochenderfer", "Tim A. Wheeler"]
 publisher = "MIT Press"
 year = 2027
 subject = "Optimization"
-kind = "pdf"
+format = "pdf"
 licence = "CC BY-NC-ND 4.0"
 licence_url = "https://creativecommons.org/licenses/by-nc-nd/4.0/"
 page = "https://algorithmsbook.com/optimization/"
@@ -56,15 +60,16 @@ download = "https://drive.usercontent.google.com/download?id=1Rx7MAekKZbyNVc5B2M
 revision = "the preview of 2026-09-05 linked from the book's page"
 size_mb = 10.9
 
-[[books]]
+[[texts]]
 id = "algorithms_for_decision_making"
 title = "Algorithms for Decision Making"
+type = "Book"
 edition = "First Edition"
 authors = ["Mykel J. Kochenderfer", "Tim A. Wheeler", "Kyle H. Wray"]
 publisher = "MIT Press"
 year = 2022
 subject = "Decision Making"
-kind = "pdf"
+format = "pdf"
 licence = "CC BY-NC-ND 4.0"
 licence_url = "https://creativecommons.org/licenses/by-nc-nd/4.0/"
 page = "https://algorithmsbook.com/decisionmaking/"
