@@ -1,0 +1,31 @@
+[algorithms_for_decision_making]
+git-tree-sha1 = "4f7f9fd27db271a51201394b0445cd486c2b5904"
+lazy = true
+
+    [[algorithms_for_decision_making.download]]
+    sha256 = "b73082a181e7c962bf14f9caf6ba47fb2f70b94af14ae9e66dacb61de9507dc9"
+    url = "https://github.com/Trumpingtons/PollisBooks.jl/releases/download/2026-11-12/algorithms_for_decision_making-2026-11-12.tar.gz"
+
+[algorithms_for_optimization]
+git-tree-sha1 = "0404faae571b21dff97094d35d3f883ad7328c93"
+lazy = true
+
+    [[algorithms_for_optimization.download]]
+    sha256 = "4c085904ae7baa2066e7bdd8d80d73f6a03bbbdc685df35c0056def2565fa751"
+    url = "https://github.com/Trumpingtons/PollisBooks.jl/releases/download/2026-11-12/algorithms_for_optimization-2026-11-12.tar.gz"
+
+[dive_into_deep_learning]
+git-tree-sha1 = "080dfbe4fd384d296196594f4940c38dd980a7c8"
+lazy = true
+
+    [[dive_into_deep_learning.download]]
+    sha256 = "f8cd812a566a60e0537545fb92226de532234b3bafbcf27ab7cc16bd707ba4b1"
+    url = "https://github.com/Trumpingtons/PollisBooks.jl/releases/download/2026-11-12/dive_into_deep_learning-2026-11-12.tar.gz"
+
+[probabilistic_machine_learning]
+git-tree-sha1 = "f31be0e5b56b6ec22d2606773c36a5b5f912b248"
+lazy = true
+
+    [[probabilistic_machine_learning.download]]
+    sha256 = "794ee7e331ee63ceb480d46faaec264a5dddbef95a464189fa819cc4294dca8c"
+    url = "https://github.com/Trumpingtons/PollisBooks.jl/releases/download/2026-11-12/probabilistic_machine_learning-2026-11-12.tar.gz"

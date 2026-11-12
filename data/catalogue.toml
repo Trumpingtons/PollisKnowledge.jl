@@ -20,7 +20,7 @@ kind = "pdf"
 licence = "CC BY-SA 3.0"
 licence_url = "https://creativecommons.org/licenses/by-sa/3.0/"
 page = "https://www.openintro.org/book/os/"
-revision = "The PDF of the fourth edition that OpenIntro distributes through leanpub.com/os"
+revision = "the PDF of the fourth edition that OpenIntro distributes through leanpub.com/os"
 
 [[books]]
 id = "dive_into_deep_learning"
@@ -66,7 +66,7 @@ licence = "CC BY-NC-ND 4.0"
 licence_url = "https://creativecommons.org/licenses/by-nc-nd/4.0/"
 page = "https://algorithmsbook.com/optimization/"
 download = "https://drive.usercontent.google.com/download?id=1Rx7MAekKZbyNVc5B2MNfR0HXXIEJCksp&export=download&confirm=t"
-revision = "The preview of 2026-09-05 linked from the book's page"
+revision = "the preview of 2026-09-05 linked from the book's page"
 
 [[books]]
 id = "algorithms_for_decision_making"
@@ -81,4 +81,4 @@ licence = "CC BY-NC-ND 4.0"
 licence_url = "https://creativecommons.org/licenses/by-nc-nd/4.0/"
 page = "https://algorithmsbook.com/decisionmaking/"
 download = "https://drive.usercontent.google.com/download?id=1drcYW3iJz4wnnCqjuVwQyc5a6eC7i6cu&export=download&confirm=t"
-revision = "The PDF of 2026-09-21 linked from the book's page"
+revision = "the PDF of 2026-09-21 linked from the book's page"

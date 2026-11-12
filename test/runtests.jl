@@ -24,22 +24,23 @@ const PBk = PollisBooks
 	@testset "Labels" begin
 		section = "# Softmax Regression\n:label:`sec_softmax`\n\n![A network.](../img/x.svg)\n:width:`300px`\n:label:`fig_net`\n\n\$\$y = x\$\$\n:eqlabel:`eq_y`\n\n| a | b |\n|---|---|\n:label:`tab_ab`"
 		labels = PBk.d2l_labels!(Dict{String, String}(), section)
-		PBk.d2l_labels!(labels, "# Linear Networks\n:label:`chap_linear`")
+		PBk.d2l_labels!(labels, "# Linear Networks\n:label:`chap_linear`\n\n\$\$a = b,\$\$ :eqlabel:`eq_ab`")
 		@test labels == Dict(
 			"sec_softmax" => "the section “Softmax Regression”",
 			"fig_net" => "the figure “A network”",
 			"eq_y" => "an equation of the section “Softmax Regression”",
 			"tab_ab" => "a table of the section “Softmax Regression”",
-			"chap_linear" => "the chapter “Linear Networks”")
+			"chap_linear" => "the chapter “Linear Networks”",
+			"eq_ab" => "an equation of the section “Linear Networks”")
 	end
 
 	@testset "Markdown of a section" begin
 		labels = Dict("sec_softmax" => "the section “Softmax Regression”", "fig_net" => "the figure “A network”",
 			"eq_y" => "an equation of the section “Softmax Regression”")
 		citations = Dict("Nair.Hinton.2010" => (; names = "Nair and Hinton", year = "2010"))
-		text = "# MLP\n:label:`sec_mlp`\n\nIn :numref:`sec_softmax`, see :numref:`fig_net` and :eqref:`eq_y`.\nReLU :cite:`Nair.Hinton.2010,Unknown.2020` as :citet:`Nair.Hinton.2010` showed.\n\n![An MLP.](../img/mlp.svg)\n:label:`fig_mlp`\n\n[**The sigmoid**] maps\n(**to (0, 1).**)\n\n\n\n:numref:`sec_missing` ends."
+		text = "# MLP\n:label:`sec_mlp`\n\nIn :numref:`sec_softmax`, see :numref:`fig_net` and :eqref:`eq_y`.\nReLU :cite:`Nair.Hinton.2010,Unknown.2020` as :citet:`Nair.Hinton.2010` showed.\n\n![An MLP.](../img/mlp.svg)\n:label:`fig_mlp`\n\n[**The sigmoid**] maps\n(**to (0, 1).**)\n\n\n\n:numref:`sec_missing` ends, as :ref:`sec_softmax` and :numref:``sec_softmax`` say.\n\$\$a = b,\$\$ :eqlabel:`eq_ab`\nEquation :eqref:`eq_y` holds."
 		@test PBk.d2l_markdown(text, labels, citations) ==
-			"# MLP\n\nIn the section “Softmax Regression”, see the figure “A network” and an equation of the section “Softmax Regression”.\nReLU (Nair and Hinton 2010; Unknown.2020) as Nair and Hinton (2010) showed.\n\n*Figure: An MLP.*\n\nThe sigmoid maps\nto (0, 1).\n\nanother section ends.\n"
+			"# MLP\n\nIn the section “Softmax Regression”, see the figure “A network” and an equation of the section “Softmax Regression”.\nReLU (Nair and Hinton 2010; Unknown.2020) as Nair and Hinton (2010) showed.\n\n*Figure: An MLP.*\n\nThe sigmoid maps\nto (0, 1).\n\nanother section ends, as the section “Softmax Regression” and the section “Softmax Regression” say.\n\$\$a = b,\$\$\nAn equation of the section “Softmax Regression” holds.\n"
 	end
 
 	@testset "Citations" begin
@@ -64,7 +65,7 @@ const PBk = PollisBooks
 	end
 
 	@testset "Tables of contents" begin
-		text = "Intro\n\n```toc\n:maxdepth: 1\n\nchapter_preface/index\n```\n\n```toc\n:maxdepth: 2\n:numbered:\n\nchapter_introduction/index\nchapter_mlp/index\n```"
+		text = "Intro\n\n```toc\n:maxdepth: 1\n\nchapter_preface/index\n```\n\n```toc\n:maxdepth: 2\n:numbered:\n\nchapter_introduction/index\nchapter_mlp/index.md\n```"
 		@test PBk.d2l_toc(text) == [(; entry = "chapter_preface/index", numbered = false),
 			(; entry = "chapter_introduction/index", numbered = true), (; entry = "chapter_mlp/index", numbered = true)]
 	end

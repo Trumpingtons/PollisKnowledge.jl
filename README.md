@@ -19,7 +19,7 @@ PBk.licence("algorithms_for_decision_making")     # its authors, source and lice
 | `algorithms_for_optimization` | Algorithms for Optimization, Second Edition, preview | Kochenderfer and Wheeler | CC BY-NC-ND 4.0 | The PDF of its authors, unchanged |
 | `algorithms_for_decision_making` | Algorithms for Decision Making | Kochenderfer, Wheeler and Wray | CC BY-NC-ND 4.0 | The PDF of its authors, unchanged |
 
-The algorithms of the two books of Kochenderfer and his co-authors are written in Julia. The catalogue, `data/catalogue.toml`, gives each book's page, source and revision. Each artifact holds `LICENCE.md`, with the book's authors, source, what it changes and its licence.
+The artifact of OpenIntro Statistics is not in a release yet: `documents` and `path` say so. The algorithms of the two books of Kochenderfer and his co-authors are written in Julia. The catalogue, `data/catalogue.toml`, gives each book's page, source and revision. Each artifact holds `LICENCE.md`, with the book's authors, source, what it changes and its licence.
 
 ## Licence
 

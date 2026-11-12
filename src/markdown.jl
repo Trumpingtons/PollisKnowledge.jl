@@ -62,6 +62,8 @@ function d2l_labels!(labels, text)
 	previous = ""
 	for line in lines
 		label = match(r"^:(?<kind>label|eqlabel):`(?<name>[^`]+)`", line)
+		inline = match(r"\S\s*:eqlabel:`(?<name>[^`]+)`", line)
+		inline === nothing || (labels[inline[:name]] = label_words("eqlabel", inline[:name], line, title))
 		if label !== nothing
 			labels[label[:name]] = label_words(label[:kind], label[:name], previous, title)
 		elseif !isempty(strip(line)) && !is_directive(line)
@@ -108,7 +110,8 @@ end
 	d2l_markdown(text, labels, citations)
 
 The Markdown of a section of Dive into Deep Learning as the artifact keeps it, from its source `text`: its prose
-(`d2l_prose`) without the directives of d2lbook; a figure as its caption; a cross-reference in words, from `labels`;
+(`d2l_prose`) without the directives of d2lbook; a figure as its caption; a cross-reference in words, from `labels`,
+`equation` before a reference to an equation left out;
 a citation by surnames and year, from `citations` (`bib_citations`); the highlight marks `[**…**]` and `(**…**)`
 of d2lbook left out, their text kept.
 """
@@ -123,12 +126,13 @@ function d2l_markdown(text, labels, citations)
 			push!(lines, line)
 		end
 	end
-	markdown = join(lines, '\n')
-	markdown = substitute(markdown, r":numref:`(?<name>[^`]+)`") do found
+	markdown = replace(join(lines, '\n'), r"\s*:eqlabel:`[^`]+`" => "")
+	markdown = substitute(markdown, r":(?:numref|ref):`+(?<name>[^`]+)`+") do found
 		get(labels, referred(found[:name]), "another section")
 	end
-	markdown = substitute(markdown, r":eqref:`(?<name>[^`]+)`") do found
-		get(labels, referred(found[:name]), "an equation")
+	markdown = substitute(markdown, r"(?<word>[Ee]quation\s+)?:eqref:`(?<name>[^`]+)`") do found
+		words = get(labels, referred(found[:name]), "an equation")
+		found[:word] !== nothing && startswith(found[:word], 'E') ? uppercasefirst(words) : words
 	end
 	markdown = substitute(markdown, r":(?<role>citet?):`(?<keys>[^`]+)`") do found
 		cited = [cited_words(get(citations, key, nothing), key, found[:role] == "citet") for key in strip.(split(found[:keys], ','))]
@@ -244,7 +248,7 @@ end
 	d2l_toc(text)
 
 The entries of the tables of contents (blocks `toc`) of the source `text`, in their order: `(; entry, numbered)`,
-the file named without `.md` and whether the block numbers its entries.
+the file named without `.md`, whether written with it or not, and whether the block numbers its entries.
 """
 function d2l_toc(text)
 	entries = @NamedTuple{entry::String, numbered::Bool}[]
@@ -259,7 +263,7 @@ function d2l_toc(text)
 		elseif in_toc && line == ":numbered:"
 			numbered = true
 		elseif in_toc && !isempty(line) && !startswith(line, ":")
-			push!(entries, (; entry = String(line), numbered))
+			push!(entries, (; entry = String(chopsuffix(line, ".md")), numbered))
 		end
 	end
 	entries
