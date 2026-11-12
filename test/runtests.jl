@@ -7,8 +7,8 @@ const PBk = PollisBooks
 
 @testset "PollisBooks" begin
 	@testset "Catalogue" begin
-		@test [book["id"] for book in PBk.books()] == ["openintro_statistics", "dive_into_deep_learning",
-			"probabilistic_machine_learning", "algorithms_for_optimization", "algorithms_for_decision_making"]
+		@test [book["id"] for book in PBk.books()] == ["dive_into_deep_learning", "probabilistic_machine_learning",
+			"algorithms_for_optimization", "algorithms_for_decision_making"]
 		keys = ["id", "title", "edition", "authors", "publisher", "year", "subject", "kind", "licence", "licence_url", "page", "revision"]
 		@test all(book -> all(key -> haskey(book, key), keys), PBk.books())
 		@test PBk.book("dive_into_deep_learning")["kind"] == "markdown"

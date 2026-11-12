@@ -4,23 +4,8 @@
 # An id is a name SQL takes as it is: lower-case letters, digits and underscores.
 #
 # `page` is the book's page on its authors' site. `download` is where its file is fetched from, at the revision of
-# `revision`; a book without `download` is fetched by hand from `page` into the folder of downloads of the build, as
-# `<id>.pdf`. `changes` says what the artifact leaves out of the book, or changes in it, when it is not the file of
+# `revision`. `changes` says what the artifact leaves out of the book, or changes in it, when it is not the file of
 # its authors unchanged.
-
-[[books]]
-id = "openintro_statistics"
-title = "OpenIntro Statistics"
-edition = "Fourth Edition"
-authors = ["David M. Diez", "Mine Çetinkaya-Rundel", "Christopher D. Barr"]
-publisher = "OpenIntro"
-year = 2019
-subject = "Statistics"
-kind = "pdf"
-licence = "CC BY-SA 3.0"
-licence_url = "https://creativecommons.org/licenses/by-sa/3.0/"
-page = "https://www.openintro.org/book/os/"
-revision = "the PDF of the fourth edition that OpenIntro distributes through leanpub.com/os"
 
 [[books]]
 id = "dive_into_deep_learning"
