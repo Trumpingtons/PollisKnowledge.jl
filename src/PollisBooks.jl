@@ -65,11 +65,17 @@ end
 	path(id)
 
 The folder of the book `id`: its files, `contents.toml` and `LICENCE.md`. The book is downloaded the first time, from
-the release of PollisBooks.jl that holds it.
+the release of PollisBooks.jl that holds it, not from a server of Julia packages, which does not have it.
 """
 function path(id)
 	book_hash(id) === nothing && error("PollisBooks has no artifact of $(book(id)["title"]) yet.")
-	ensure_artifact_installed(String(id), ARTIFACTS_FILE)
+	try
+		ensure_artifact_installed(String(id), ARTIFACTS_FILE; pkg_server_eligible = false)
+	catch failure
+		# A Pkg older than the keyword tries the server first, then the release
+		failure isa MethodError || rethrow()
+		ensure_artifact_installed(String(id), ARTIFACTS_FILE)
+	end
 end
 
 """
