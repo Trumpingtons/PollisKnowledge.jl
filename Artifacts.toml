@@ -1,3 +1,11 @@
+[agents]
+git-tree-sha1 = "065ffa1a5288ef84a2463a4ca892f980b46045da"
+lazy = true
+
+    [[agents.download]]
+    sha256 = "873b879f03a478aa430600871997afca705b9e87e595c46874993a13e46b8277"
+    url = "https://github.com/Trumpingtons/PollisKnowledge.jl/releases/download/2026-11-13/agents-2026-11-13.tar.gz"
+
 [algorithms_for_decision_making]
 git-tree-sha1 = "4f7f9fd27db271a51201394b0445cd486c2b5904"
 lazy = true
@@ -14,6 +22,70 @@ lazy = true
     sha256 = "4c085904ae7baa2066e7bdd8d80d73f6a03bbbdc685df35c0056def2565fa751"
     url = "https://github.com/Trumpingtons/PollisKnowledge.jl/releases/download/2026-11-12/algorithms_for_optimization-2026-11-12.tar.gz"
 
+[archmodels]
+git-tree-sha1 = "801955dba1ca886c49f0b7d73d9e67732942c2eb"
+lazy = true
+
+    [[archmodels.download]]
+    sha256 = "b8daec9a0bee95b52ddf70d2a67ab9419e00f1e24246b42cdba6975e37a74a15"
+    url = "https://github.com/Trumpingtons/PollisKnowledge.jl/releases/download/2026-11-13/archmodels-2026-11-13.tar.gz"
+
+[betaml]
+git-tree-sha1 = "52eda8447e8bf43e9fb4202ed025f6626d6feae3"
+lazy = true
+
+    [[betaml.download]]
+    sha256 = "b2d7778520f861dda65b5511fd8317827b701fca82e16be659fcc0daf3bad1c6"
+    url = "https://github.com/Trumpingtons/PollisKnowledge.jl/releases/download/2026-11-13/betaml-2026-11-13.tar.gz"
+
+[catalyst]
+git-tree-sha1 = "65f5f301b3de526468a2883d3038e1468f35db41"
+lazy = true
+
+    [[catalyst.download]]
+    sha256 = "4f017e279152d4d6562193771de843e5c4ee76e4e9e1489b4fe0e87aba4e6695"
+    url = "https://github.com/Trumpingtons/PollisKnowledge.jl/releases/download/2026-11-13/catalyst-2026-11-13.tar.gz"
+
+[complexitymeasures]
+git-tree-sha1 = "306be13223de5573b59973f1bd99f258ed96e151"
+lazy = true
+
+    [[complexitymeasures.download]]
+    sha256 = "261a12a50ae9812af6ca1c3de638ad6f2c05aa378f22d1a16a08c16a3fe14030"
+    url = "https://github.com/Trumpingtons/PollisKnowledge.jl/releases/download/2026-11-13/complexitymeasures-2026-11-13.tar.gz"
+
+[copulas]
+git-tree-sha1 = "3ef895c510d5ba1850029b8bf08eded9d62225b7"
+lazy = true
+
+    [[copulas.download]]
+    sha256 = "7aa3c92e839d479dfdfd7292806fd97255fbc25ae19a53d3deebd3a30a10df05"
+    url = "https://github.com/Trumpingtons/PollisKnowledge.jl/releases/download/2026-11-13/copulas-2026-11-13.tar.gz"
+
+[cosmo]
+git-tree-sha1 = "98494aa0c888cc9bd1ea04d77d33d322dd732ed2"
+lazy = true
+
+    [[cosmo.download]]
+    sha256 = "f4b54b9df02dda2874582247534c2406824fceff19958513ce1f83ebf7ce7dbe"
+    url = "https://github.com/Trumpingtons/PollisKnowledge.jl/releases/download/2026-11-13/cosmo-2026-11-13.tar.gz"
+
+[differentialequations]
+git-tree-sha1 = "98d522441055fc75acc91cdd61883b9852248ae8"
+lazy = true
+
+    [[differentialequations.download]]
+    sha256 = "dcae306ed15f9aea602031970bc38ac8560e8f521d4b216090b604fd2849b48d"
+    url = "https://github.com/Trumpingtons/PollisKnowledge.jl/releases/download/2026-11-13/differentialequations-2026-11-13.tar.gz"
+
+[distributions]
+git-tree-sha1 = "8bf8a4eeac1e5f38a088f9dca236592228cfe403"
+lazy = true
+
+    [[distributions.download]]
+    sha256 = "adc12ffeb11d3bbcba46273f1c001bfa09621b85567cc87c31196a85ad19071f"
+    url = "https://github.com/Trumpingtons/PollisKnowledge.jl/releases/download/2026-11-13/distributions-2026-11-13.tar.gz"
+
 [dive_into_deep_learning]
 git-tree-sha1 = "080dfbe4fd384d296196594f4940c38dd980a7c8"
 lazy = true
@@ -22,6 +94,278 @@ lazy = true
     sha256 = "f8cd812a566a60e0537545fb92226de532234b3bafbcf27ab7cc16bd707ba4b1"
     url = "https://github.com/Trumpingtons/PollisKnowledge.jl/releases/download/2026-11-12/dive_into_deep_learning-2026-11-12.tar.gz"
 
+[dynamicalsystems]
+git-tree-sha1 = "8ed57a48b22fb0541d8e804aa8ef778ba8f49534"
+lazy = true
+
+    [[dynamicalsystems.download]]
+    sha256 = "a7d2b517a277a05c8ea49531ab7768cd8a671cac6f7c4941d8f58de0ab9e51f1"
+    url = "https://github.com/Trumpingtons/PollisKnowledge.jl/releases/download/2026-11-13/dynamicalsystems-2026-11-13.tar.gz"
+
+[extremes]
+git-tree-sha1 = "9902dddf0c25b6120f6ddaaf97800d290c159343"
+lazy = true
+
+    [[extremes.download]]
+    sha256 = "07d958f1e5dac0f725c91206782f7d3f6f11713eaa0cd642e0d400e1e18ad998"
+    url = "https://github.com/Trumpingtons/PollisKnowledge.jl/releases/download/2026-11-13/extremes-2026-11-13.tar.gz"
+
+[flux]
+git-tree-sha1 = "eb5e16b6822c3d19f7c0402ff9c1dcafdb25c27f"
+lazy = true
+
+    [[flux.download]]
+    sha256 = "2477b6e34bae764c026cf246298716a8b47942054ceac52327cd4d6036df0c72"
+    url = "https://github.com/Trumpingtons/PollisKnowledge.jl/releases/download/2026-11-13/flux-2026-11-13.tar.gz"
+
+[frankwolfe]
+git-tree-sha1 = "780af5398c8afa1b35e001a40cd309a5ad939a36"
+lazy = true
+
+    [[frankwolfe.download]]
+    sha256 = "6b0745c6936b1707530de093f16cca58171107f6a7cff74a40dab66d49b2236e"
+    url = "https://github.com/Trumpingtons/PollisKnowledge.jl/releases/download/2026-11-13/frankwolfe-2026-11-13.tar.gz"
+
+[frankwolfe_improved]
+git-tree-sha1 = "c0d7b0ceb44bcbfaf785f8fecbb80c36196cfe4d"
+lazy = true
+
+    [[frankwolfe_improved.download]]
+    sha256 = "4703a93760d3839c9e9023d4075631edca758d013babfcc4265af4656b1fa6da"
+    url = "https://github.com/Trumpingtons/PollisKnowledge.jl/releases/download/2026-11-13/frankwolfe_improved-2026-11-13.tar.gz"
+
+[gridap]
+git-tree-sha1 = "32e7527567ffa5256759eaea881c2d5d9d40564f"
+lazy = true
+
+    [[gridap.download]]
+    sha256 = "275593ab8839e0c5decf7a6f5d831ae91b31af059c46bc89435f3ba76df3e2c3"
+    url = "https://github.com/Trumpingtons/PollisKnowledge.jl/releases/download/2026-11-13/gridap-2026-11-13.tar.gz"
+
+[gridap_software_design]
+git-tree-sha1 = "399556ae7f184edb41b8eb91705161075f66a721"
+lazy = true
+
+    [[gridap_software_design.download]]
+    sha256 = "cc9d58eb1d1c1edde220e827f58ca1e94946f889c46d9bac7198baa28e4b2e5e"
+    url = "https://github.com/Trumpingtons/PollisKnowledge.jl/releases/download/2026-11-13/gridap_software_design-2026-11-13.tar.gz"
+
+[hypatia]
+git-tree-sha1 = "9a427694828595ff1711fa42855089515a9d34dd"
+lazy = true
+
+    [[hypatia.download]]
+    sha256 = "2822eff0a82b424089ccc03f2003b6b1aabee24d81c4295420184ea4e8cc0c36"
+    url = "https://github.com/Trumpingtons/PollisKnowledge.jl/releases/download/2026-11-13/hypatia-2026-11-13.tar.gz"
+
+[hypatia_interior_point]
+git-tree-sha1 = "ce5d0290f298eafec1880c76dbb55f73ec3f1df2"
+lazy = true
+
+    [[hypatia_interior_point.download]]
+    sha256 = "b907e89272ae166c5585fca74fc487e4f4e896edd232b11519048d8b410096fe"
+    url = "https://github.com/Trumpingtons/PollisKnowledge.jl/releases/download/2026-11-13/hypatia_interior_point-2026-11-13.tar.gz"
+
+[hypatia_jordan_algebras]
+git-tree-sha1 = "a8dfab01e805e86039883fd0b5300a43c1d4c36b"
+lazy = true
+
+    [[hypatia_jordan_algebras.download]]
+    sha256 = "3adff094107e15a8cbb3c7ff77ad722c14f003aa860959273c343a1ce4c7a809"
+    url = "https://github.com/Trumpingtons/PollisKnowledge.jl/releases/download/2026-11-13/hypatia_jordan_algebras-2026-11-13.tar.gz"
+
+[infiniteopt]
+git-tree-sha1 = "d2c961afc8d37c8322fcb98c4f381658df63a105"
+lazy = true
+
+    [[infiniteopt.download]]
+    sha256 = "9198b8b4ccd7a82e5c8763d8f6eaffdd1cdc3503b7b591f44f2ac87436afc73c"
+    url = "https://github.com/Trumpingtons/PollisKnowledge.jl/releases/download/2026-11-13/infiniteopt-2026-11-13.tar.gz"
+
+[julia_dynamism_and_performance]
+git-tree-sha1 = "277285afa793c1b091aff24b22eb564e9312fa9c"
+lazy = true
+
+    [[julia_dynamism_and_performance.download]]
+    sha256 = "109d4b3b6d48e29e195ccc7e7627bb5c3357ab714adcf682bc3c348f0def0a3f"
+    url = "https://github.com/Trumpingtons/PollisKnowledge.jl/releases/download/2026-11-13/julia_dynamism_and_performance-2026-11-13.tar.gz"
+
+[julia_in_machine_learning]
+git-tree-sha1 = "b678b84721da7973f57fc7f94fad0df127867c8f"
+lazy = true
+
+    [[julia_in_machine_learning.download]]
+    sha256 = "d7de64b41660c2d9d0f1fcbb15b35d408157ef8114f145561fc03ba4610c9d16"
+    url = "https://github.com/Trumpingtons/PollisKnowledge.jl/releases/download/2026-11-13/julia_in_machine_learning-2026-11-13.tar.gz"
+
+[julia_subtyping]
+git-tree-sha1 = "9dfe0dd244552cffe12cd7b8302288032261ca1e"
+lazy = true
+
+    [[julia_subtyping.download]]
+    sha256 = "96d9c0d27ad7d3dfa9b1c3c7f2eba962f7f14d9d9cf663cec56433758259827e"
+    url = "https://github.com/Trumpingtons/PollisKnowledge.jl/releases/download/2026-11-13/julia_subtyping-2026-11-13.tar.gz"
+
+[jumpprocesses]
+git-tree-sha1 = "5874f7ecabbba35eeab3ac27b37d3d2627f75957"
+lazy = true
+
+    [[jumpprocesses.download]]
+    sha256 = "afe62650cd1eae433cc74e51a0c0145b0d6908e72e5d198c2159f649f213a331"
+    url = "https://github.com/Trumpingtons/PollisKnowledge.jl/releases/download/2026-11-13/jumpprocesses-2026-11-13.tar.gz"
+
+[krylov]
+git-tree-sha1 = "f0d3cf6ca0f754be8d395d73b074024b8ecf61a5"
+lazy = true
+
+    [[krylov.download]]
+    sha256 = "7a6b2fdeaa7e3b1115a53cde820479fd67070fbf0b86891d14ea8c7f7c408c29"
+    url = "https://github.com/Trumpingtons/PollisKnowledge.jl/releases/download/2026-11-13/krylov-2026-11-13.tar.gz"
+
+[likelihoodprofiler]
+git-tree-sha1 = "cd804cb207a08ee695a1d6545a7b0861a5787741"
+lazy = true
+
+    [[likelihoodprofiler.download]]
+    sha256 = "7e404971315f3fae2e07c6c8b05774b26e5dcb747ef7828568fbf83c614feed4"
+    url = "https://github.com/Trumpingtons/PollisKnowledge.jl/releases/download/2026-11-13/likelihoodprofiler-2026-11-13.tar.gz"
+
+[macromodelling]
+git-tree-sha1 = "225f940871d1f688fd955a1ca1e49429ea224aaf"
+lazy = true
+
+    [[macromodelling.download]]
+    sha256 = "6786d96c85f5ea9303cd47acf70a5513f129665ab3f9d5792c45eec5f6f5be20"
+    url = "https://github.com/Trumpingtons/PollisKnowledge.jl/releases/download/2026-11-13/macromodelling-2026-11-13.tar.gz"
+
+[makie]
+git-tree-sha1 = "9679b4d1040be861b6f77f7b7303d7afb8dcaf79"
+lazy = true
+
+    [[makie.download]]
+    sha256 = "7787c893a7dfd625b3e02466d3f21d2692a5c5af83fb998f4cf01214445edb46"
+    url = "https://github.com/Trumpingtons/PollisKnowledge.jl/releases/download/2026-11-13/makie-2026-11-13.tar.gz"
+
+[manifolds]
+git-tree-sha1 = "d8ff47dad4cadc25343adf315fed58ea7f437644"
+lazy = true
+
+    [[manifolds.download]]
+    sha256 = "812f7151c3eebe3a6231f8f73fd37d6390a2c916f166b1ddd10dc894440b5a60"
+    url = "https://github.com/Trumpingtons/PollisKnowledge.jl/releases/download/2026-11-13/manifolds-2026-11-13.tar.gz"
+
+[manopt]
+git-tree-sha1 = "313706e3b3110e0ebc3fe36b513d9d188598668f"
+lazy = true
+
+    [[manopt.download]]
+    sha256 = "a3ad672fde379ac4010afc367f21712b3ebafc8e4c825dd94df51931e2c35d0e"
+    url = "https://github.com/Trumpingtons/PollisKnowledge.jl/releases/download/2026-11-13/manopt-2026-11-13.tar.gz"
+
+[marswitching]
+git-tree-sha1 = "7556781a56ef4bc4f7b6a79ac50e3a70ab47f7e8"
+lazy = true
+
+    [[marswitching.download]]
+    sha256 = "6ef3f1b1fe4c5fb521455c65dd6ecf6850005447c4595087c00bf10360d85f4f"
+    url = "https://github.com/Trumpingtons/PollisKnowledge.jl/releases/download/2026-11-13/marswitching-2026-11-13.tar.gz"
+
+[measurements]
+git-tree-sha1 = "2ab6a3c8441e87e15a9c8a955d4e27d568a67fff"
+lazy = true
+
+    [[measurements.download]]
+    sha256 = "b3e39da9757c0ad04ce109054b510fccfe0ce4227921de71228ef180b859b8f4"
+    url = "https://github.com/Trumpingtons/PollisKnowledge.jl/releases/download/2026-11-13/measurements-2026-11-13.tar.gz"
+
+[metaheuristics]
+git-tree-sha1 = "766270a1af13d64a45f96ee0fcccbb3a63e99976"
+lazy = true
+
+    [[metaheuristics.download]]
+    sha256 = "280dbd4ef072d83824468cf83b6e6573068108ada2eceec9347d00896db47a71"
+    url = "https://github.com/Trumpingtons/PollisKnowledge.jl/releases/download/2026-11-13/metaheuristics-2026-11-13.tar.gz"
+
+[mlj]
+git-tree-sha1 = "98fe06ce5e4a2623c9cba206ffcf200aa854cb01"
+lazy = true
+
+    [[mlj.download]]
+    sha256 = "17a31dc215c70b4c754540a94ec75d994df8cf7b835d31c2ae47b10a12616754"
+    url = "https://github.com/Trumpingtons/PollisKnowledge.jl/releases/download/2026-11-13/mlj-2026-11-13.tar.gz"
+
+[modelingtoolkit]
+git-tree-sha1 = "b0f815f3325ce2839f9c8288003e3c383dff8ded"
+lazy = true
+
+    [[modelingtoolkit.download]]
+    sha256 = "8586c51ed4342ef7d769093e431268e193e3c10c0a1a2cc5f871647d658be94f"
+    url = "https://github.com/Trumpingtons/PollisKnowledge.jl/releases/download/2026-11-13/modelingtoolkit-2026-11-13.tar.gz"
+
+[modelpredictivecontrol]
+git-tree-sha1 = "f922c77c1fb6bbb19dc66fa6d860eb6c1492c738"
+lazy = true
+
+    [[modelpredictivecontrol.download]]
+    sha256 = "fe7a6c1b90e96ac91bf99a5d8778700965866ffbb861e2d3bd9a170ec8d0e178"
+    url = "https://github.com/Trumpingtons/PollisKnowledge.jl/releases/download/2026-11-13/modelpredictivecontrol-2026-11-13.tar.gz"
+
+[nolimits]
+git-tree-sha1 = "b7b722041e85eeb46672f90d1bb223a03cae7e96"
+lazy = true
+
+    [[nolimits.download]]
+    sha256 = "c45c1333eff4d543e2fd5d37ec497ff33e10ab57e019b9ac8cdf7463dfec69a5"
+    url = "https://github.com/Trumpingtons/PollisKnowledge.jl/releases/download/2026-11-13/nolimits-2026-11-13.tar.gz"
+
+[nonlinearsolve]
+git-tree-sha1 = "e81c1e692703ab6097f3beb2bc543796a5441932"
+lazy = true
+
+    [[nonlinearsolve.download]]
+    sha256 = "a67bf64a4c008713b94a5b221698e7f6636003df152bf1780e619ba790813e86"
+    url = "https://github.com/Trumpingtons/PollisKnowledge.jl/releases/download/2026-11-13/nonlinearsolve-2026-11-13.tar.gz"
+
+[onlinestats]
+git-tree-sha1 = "768d3c0320e79ca6a02325eb60c9c4313906c519"
+lazy = true
+
+    [[onlinestats.download]]
+    sha256 = "2c4806394d27b667fc3857aa4cc590b132fed73ca2bb4ee8fa40eba9fd201628"
+    url = "https://github.com/Trumpingtons/PollisKnowledge.jl/releases/download/2026-11-13/onlinestats-2026-11-13.tar.gz"
+
+[optim]
+git-tree-sha1 = "33d79725876f4a7d68550996e33e918052f59741"
+lazy = true
+
+    [[optim.download]]
+    sha256 = "c7ff635d0d9bd6955fd4d63ce01e69a5e8131ff3a0b553cc4593bdb623d79940"
+    url = "https://github.com/Trumpingtons/PollisKnowledge.jl/releases/download/2026-11-13/optim-2026-11-13.tar.gz"
+
+[outlierdetection]
+git-tree-sha1 = "fe1747cccfe73f2824f960cbdb28bbb3363bd933"
+lazy = true
+
+    [[outlierdetection.download]]
+    sha256 = "ffbfe5f0b6b95c9b5894376506155bb6ef0540625225548552614b8068eee8ea"
+    url = "https://github.com/Trumpingtons/PollisKnowledge.jl/releases/download/2026-11-13/outlierdetection-2026-11-13.tar.gz"
+
+[pathogen]
+git-tree-sha1 = "df6d5e955ee62a08e54c44014f894a9d2def3929"
+lazy = true
+
+    [[pathogen.download]]
+    sha256 = "bb1e4080b39d75ad2b4d5f0afd5c3a65c2822062befd9c468ddb9f51e4195c33"
+    url = "https://github.com/Trumpingtons/PollisKnowledge.jl/releases/download/2026-11-13/pathogen-2026-11-13.tar.gz"
+
+[petab]
+git-tree-sha1 = "cd85842ecbd8144747422ad15fa49c517f91b6c2"
+lazy = true
+
+    [[petab.download]]
+    sha256 = "1914cb975f5ea90c3c2c7b5c55ae41fa0ba193cdf505391892ab6d6c3950f7a5"
+    url = "https://github.com/Trumpingtons/PollisKnowledge.jl/releases/download/2026-11-13/petab-2026-11-13.tar.gz"
+
 [probabilistic_machine_learning]
 git-tree-sha1 = "f31be0e5b56b6ec22d2606773c36a5b5f912b248"
 lazy = true
@@ -29,3 +373,107 @@ lazy = true
     [[probabilistic_machine_learning.download]]
     sha256 = "794ee7e331ee63ceb480d46faaec264a5dddbef95a464189fa819cc4294dca8c"
     url = "https://github.com/Trumpingtons/PollisKnowledge.jl/releases/download/2026-11-12/probabilistic_machine_learning-2026-11-12.tar.gz"
+
+[reactive_message_passing]
+git-tree-sha1 = "f5327c9aa54d52036ed19deeda5cafc38504d566"
+lazy = true
+
+    [[reactive_message_passing.download]]
+    sha256 = "823301cdc75a51f4f65bdb387b690e4ca73ac908868e35061146155c5c2b239a"
+    url = "https://github.com/Trumpingtons/PollisKnowledge.jl/releases/download/2026-11-13/reactive_message_passing-2026-11-13.tar.gz"
+
+[reactivemp]
+git-tree-sha1 = "35c529a83f92b34e2698004c272145c17b3f3a4d"
+lazy = true
+
+    [[reactivemp.download]]
+    sha256 = "2864eac8a13f56bf6226ef3d2915ac076ac2e9db26445c37a7433701fab34171"
+    url = "https://github.com/Trumpingtons/PollisKnowledge.jl/releases/download/2026-11-13/reactivemp-2026-11-13.tar.gz"
+
+[recurrentlayers]
+git-tree-sha1 = "0007eec70d873c1e1ebc2317581b1bae187c7af8"
+lazy = true
+
+    [[recurrentlayers.download]]
+    sha256 = "3b1ca9d7bcf69fa5084711becca8300cf4afe48fa41958a18dbcdbded7cbd0f8"
+    url = "https://github.com/Trumpingtons/PollisKnowledge.jl/releases/download/2026-11-13/recurrentlayers-2026-11-13.tar.gz"
+
+[rxinfer]
+git-tree-sha1 = "07f4625d9aa646c36b8af842d2acc0bbc71a62e1"
+lazy = true
+
+    [[rxinfer.download]]
+    sha256 = "e528690f55bc1de24df87d8b0dd8d63b774b6b38840ba65054e3449f44991270"
+    url = "https://github.com/Trumpingtons/PollisKnowledge.jl/releases/download/2026-11-13/rxinfer-2026-11-13.tar.gz"
+
+[sirus]
+git-tree-sha1 = "d9248fd36fd816e5e56750fa1b9bf214c759c805"
+lazy = true
+
+    [[sirus.download]]
+    sha256 = "f8bf61faf4c85146e381c955e5e03b53cf48abba9dd955b518ea948e82cb3726"
+    url = "https://github.com/Trumpingtons/PollisKnowledge.jl/releases/download/2026-11-13/sirus-2026-11-13.tar.gz"
+
+[structuralidentifiability_observables]
+git-tree-sha1 = "079c777a3d788fa0dcaa1ec40f7abf0d3b189b5e"
+lazy = true
+
+    [[structuralidentifiability_observables.download]]
+    sha256 = "b131ba35080226006161af0c67db5e849eb8c049e7952610fd9e99cebc8af35c"
+    url = "https://github.com/Trumpingtons/PollisKnowledge.jl/releases/download/2026-11-13/structuralidentifiability_observables-2026-11-13.tar.gz"
+
+[structuralidentifiability_tutorial]
+git-tree-sha1 = "e1dc5c88fbbd4b6b3da577f38ae829aef49cf7fa"
+lazy = true
+
+    [[structuralidentifiability_tutorial.download]]
+    sha256 = "9b6fab4f3bb4ac4f4935b6b4e534af5904756db005114046102eeda0d6845579"
+    url = "https://github.com/Trumpingtons/PollisKnowledge.jl/releases/download/2026-11-13/structuralidentifiability_tutorial-2026-11-13.tar.gz"
+
+[symbolic_numeric_integration]
+git-tree-sha1 = "c3cd212ad9209283ab47f78336d0953c8c1ea211"
+lazy = true
+
+    [[symbolic_numeric_integration.download]]
+    sha256 = "0ff95bea1024903fa72bf86da8919f2bfb5dc32e89f43dd5fb71e38ce5ef87e7"
+    url = "https://github.com/Trumpingtons/PollisKnowledge.jl/releases/download/2026-11-13/symbolic_numeric_integration-2026-11-13.tar.gz"
+
+[symbolic_numeric_integration_sparse_regression]
+git-tree-sha1 = "a9b56ee4f2706ffd2062b4715e046cb518a206c7"
+lazy = true
+
+    [[symbolic_numeric_integration_sparse_regression.download]]
+    sha256 = "7c7b1bd6d33bfa55845346e6713dbdcba3a88e15f8df37b3e32b9b7f00f9022f"
+    url = "https://github.com/Trumpingtons/PollisKnowledge.jl/releases/download/2026-11-13/symbolic_numeric_integration_sparse_regression-2026-11-13.tar.gz"
+
+[symbolics]
+git-tree-sha1 = "d9615de2fd1373217a1446a6dc87a60fa64be938"
+lazy = true
+
+    [[symbolics.download]]
+    sha256 = "9a1f6ec551aab5072822b19795e473d9e565f236c03b24a1b6c4c0ad0dd8c5a6"
+    url = "https://github.com/Trumpingtons/PollisKnowledge.jl/releases/download/2026-11-13/symbolics-2026-11-13.tar.gz"
+
+[symbolics_hash_consing]
+git-tree-sha1 = "442859f18aecc62de29609b5d7ae80356c7d3423"
+lazy = true
+
+    [[symbolics_hash_consing.download]]
+    sha256 = "5085371f2296495674ddad6393c485df9fbb08882448112fba1c857b1a237ae6"
+    url = "https://github.com/Trumpingtons/PollisKnowledge.jl/releases/download/2026-11-13/symbolics_hash_consing-2026-11-13.tar.gz"
+
+[taylorseries]
+git-tree-sha1 = "1f49e62048e53670fce8fec52ea1c11d8b146d31"
+lazy = true
+
+    [[taylorseries.download]]
+    sha256 = "0b4773c2bc88d01608e7b65cc97b9d5b9be793f4453d550599a27e3804090e04"
+    url = "https://github.com/Trumpingtons/PollisKnowledge.jl/releases/download/2026-11-13/taylorseries-2026-11-13.tar.gz"
+
+[timeseriessurrogates]
+git-tree-sha1 = "f2796e5bd6dd27253dea70be126ed12143fbb3a8"
+lazy = true
+
+    [[timeseriessurrogates.download]]
+    sha256 = "f33398774c6ac5bad9049d5addd05a500ebbd87e4b5f757da5aa4db5deec26da"
+    url = "https://github.com/Trumpingtons/PollisKnowledge.jl/releases/download/2026-11-13/timeseriessurrogates-2026-11-13.tar.gz"

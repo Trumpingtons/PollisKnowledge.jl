@@ -38,12 +38,13 @@ const ARTIFACTS_FILE = joinpath(dirname(@__DIR__), "Artifacts.toml")
 The entries of the catalogue, one per text, in its order: id, reference (the key of its work in PollisReferences.jl,
 with its abstract, key words and classifications), title, type (Book, Lecture Notes, Report, Manual...),
 edition, authors, publisher, year, subject, format ("pdf" or "markdown"), licence, licence_url, page (the text's page
-on its authors' site), revision, size_mb and, for some, download (where the build fetched it from) and changes (what
-the artifact leaves out of the text, or changes in it). A published book has cover (its file, see `cover`),
-cover_from (where its authors show it) and hard_copy (its publisher's page, where the printed book is sold). A book
-the Library of Congress catalogues has its subject headings as subject, with subject_from = "LCSH", and lccn, the
-number of its record (lccn.loc.gov/<lccn>), which its classification in PollisReferences.jl comes from; record_edition
-names the edition of the record when it is not that of the text.
+on its authors' site), revision, size_mb and, for some, packages (the Julia packages the text is about), download
+(where the build fetched it from) and changes (what the artifact leaves out of the text, or changes in it). A
+published book has cover (its file, see `cover`), cover_from (where its authors show it) and hard_copy (its
+publisher's page, where the printed book is sold). A book the Library of Congress catalogues has its subject
+headings as subject, with subject_from = "LCSH", and lccn, the number of its record (lccn.loc.gov/<lccn>), which its
+classification in PollisReferences.jl comes from; record_edition names the edition of the record when it is not that
+of the text.
 """
 catalogue() = CATALOGUE
 

@@ -1,5 +1,6 @@
 using PollisKnowledge
 using Test
+import TOML
 
 const PK = PollisKnowledge
 
@@ -7,18 +8,30 @@ const PK = PollisKnowledge
 
 @testset "PollisKnowledge" begin
 	@testset "Catalogue" begin
-		@test [entry["id"] for entry in PK.catalogue()] == ["dive_into_deep_learning", "probabilistic_machine_learning",
-			"algorithms_for_optimization", "algorithms_for_decision_making"]
-		keys = ["id", "title", "type", "edition", "authors", "publisher", "year", "subject", "format", "licence", "licence_url", "page", "revision", "size_mb"]
+		ids = [entry["id"] for entry in PK.catalogue()]
+		# The four books, then the 56 articles
+		@test ids[1:4] == ["dive_into_deep_learning", "probabilistic_machine_learning", "algorithms_for_optimization",
+			"algorithms_for_decision_making"]
+		@test length(ids) == 60 && allunique(ids)
+		@test [entry["type"] for entry in PK.catalogue()] == [fill("Book", 4); fill("Article", 56)]
+		keys = ["id", "reference", "title", "type", "edition", "authors", "publisher", "year", "subject", "format", "licence", "licence_url", "page", "revision", "size_mb"]
 		@test all(entry -> all(key -> haskey(entry, key), keys), PK.catalogue())
 		@test PK.catalogue_entry("dive_into_deep_learning")["format"] == "markdown"
+		@test PK.catalogue_entry("recurrentlayers")["packages"] == ["RecurrentLayers.jl", "LuxRecurrentLayers.jl"]
 		@test_throws ErrorException PK.catalogue_entry("islp")
 	end
 
+	@testset "Artifacts" begin
+		# Every text has its artifact, and only they have one
+		@test Set(Base.keys(TOML.parsefile(PK.ARTIFACTS_FILE))) == Set(entry["id"] for entry in PK.catalogue())
+	end
+
 	@testset "Covers" begin
-		@test all(entry -> isfile(PK.cover(entry["id"])), PK.catalogue())
+		books = filter(entry -> entry["type"] == "Book", PK.catalogue())
+		@test all(entry -> isfile(PK.cover(entry["id"])), books)
 		@test basename(PK.cover("algorithms_for_decision_making")) == "algorithms_for_decision_making.jpg"
-		@test all(entry -> startswith(entry["hard_copy"], "https://"), PK.catalogue())
+		@test all(entry -> startswith(entry["hard_copy"], "https://"), books)
+		@test PK.cover("manifolds") === nothing
 	end
 
 	@testset "Prose of a section" begin
