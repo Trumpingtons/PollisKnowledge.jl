@@ -8,11 +8,15 @@
 # revision of `revision`. `size_mb` is the size of its artifact as downloaded, in MB. `changes` says what the artifact
 # leaves out of the text, or changes in it, when it is not the file of its authors unchanged.
 #
+# `reference` is the key of the text's work in PollisReferences.jl, the library of references of Pollis, which has its
+# authors, year, abstract, key words and classifications.
+#
 # A published book has its cover, `cover`, a file of data/covers, as its authors show it on its page, at `cover_from`,
 # and `hard_copy`, the page of its publisher where the printed book is sold.
 
 [[texts]]
 id = "dive_into_deep_learning"
+reference = "ZLLS2023a"
 title = "Dive into Deep Learning"
 type = "Book"
 edition = "Release 1.0.3"
@@ -21,7 +25,6 @@ publisher = "Cambridge University Press"
 year = 2023
 subject = "Deep learning (Machine learning)"
 subject_from = "LCSH"
-classifications = ["LCC: Q325.73 .Z43 2023"]
 lccn = "2023012498"
 format = "markdown"
 licence = "CC BY-SA 4.0"
@@ -37,6 +40,7 @@ changes = "Converted from its Markdown sources, one file a section: its code cel
 
 [[texts]]
 id = "probabilistic_machine_learning"
+reference = "Mur2022a"
 title = "Probabilistic Machine Learning: An Introduction"
 type = "Book"
 edition = "Draft of 2025-04-18"
@@ -45,7 +49,6 @@ publisher = "MIT Press"
 year = 2022
 subject = "Machine learning; Probabilities"
 subject_from = "LCSH"
-classifications = ["LCC: Q325.5 .M872 2022"]
 lccn = "2021027430"
 format = "pdf"
 licence = "CC BY-NC-ND 4.0"
@@ -60,6 +63,7 @@ size_mb = 85.8
 
 [[texts]]
 id = "algorithms_for_optimization"
+reference = "KW2027a"
 title = "Algorithms for Optimization"
 type = "Book"
 edition = "Second Edition, preview"
@@ -68,7 +72,6 @@ publisher = "MIT Press"
 year = 2027
 subject = "Algorithms; Algorithms--Problems, exercises, etc."
 subject_from = "LCSH"
-classifications = ["LCC: QA9.58 .K65425 2019"]
 lccn = "2018023091"
 record_edition = "1st edition, 2019"
 format = "pdf"
@@ -84,6 +87,7 @@ size_mb = 10.9
 
 [[texts]]
 id = "algorithms_for_decision_making"
+reference = "KWW2022a"
 title = "Algorithms for Decision Making"
 type = "Book"
 edition = "First Edition"
@@ -92,7 +96,6 @@ publisher = "MIT Press"
 year = 2022
 subject = "Decision support systems--Mathematics; Algorithms"
 subject_from = "LCSH"
-classifications = ["LCC: T58.62 .K666 2022"]
 lccn = "2021038701"
 format = "pdf"
 licence = "CC BY-NC-ND 4.0"
@@ -104,3 +107,1011 @@ hard_copy = "https://mitpress.mit.edu/9780262047012/algorithms-for-decision-maki
 download = "https://drive.usercontent.google.com/download?id=1drcYW3iJz4wnnCqjuVwQyc5a6eC7i6cu&export=download&confirm=t"
 revision = "the PDF of 2026-09-21 linked from the book's page"
 size_mb = 10.8
+
+[[texts]]
+id = "julia_dynamism_and_performance"
+reference = "BCCKS...2018a"
+title = "Julia: Dynamism and Performance Reconciled by Design"
+type = "Article"
+edition = "Published version"
+authors = ["Jeff Bezanson", "Jiahao Chen", "Benjamin Chung", "Stefan Karpinski", "Viral B. Shah", "Jan Vitek", "Lionel Zoubritzky"]
+publisher = "Proceedings of the ACM on Programming Languages, 2 (OOPSLA)"
+year = 2018
+subject = "Software and its engineering (ACM CCS)"
+format = "pdf"
+licence = "CC BY 4.0"
+licence_url = "https://creativecommons.org/licenses/by/4.0/"
+page = "https://doi.org/10.1145/3276490"
+download = "https://dl.acm.org/doi/pdf/10.1145/3276490"
+revision = "2018-10-24"
+size_mb = 0.7
+
+[[texts]]
+id = "julia_subtyping"
+reference = "NBPCB...2018a"
+title = "Julia Subtyping: A Rational Reconstruction"
+type = "Article"
+edition = "Published version"
+authors = ["Francesco Zappa Nardelli", "Julia Belyakova", "Artem Pelenitsyn", "Benjamin Chung", "Jeff Bezanson", "Jan Vitek"]
+publisher = "Proceedings of the ACM on Programming Languages, 2 (OOPSLA)"
+year = 2018
+subject = "Software and its engineering (ACM CCS)"
+format = "pdf"
+licence = "CC BY 4.0"
+licence_url = "https://creativecommons.org/licenses/by/4.0/"
+page = "https://doi.org/10.1145/3276483"
+download = "https://dl.acm.org/doi/pdf/10.1145/3276483"
+revision = "2018-10-24"
+size_mb = 0.5
+
+[[texts]]
+id = "julia_in_machine_learning"
+reference = "GMPCT...2020a"
+title = "Julia Language in Machine Learning: Algorithms, Applications, and Open Issues"
+type = "Article"
+edition = "Published version"
+authors = ["Kaifeng Gao", "Gang Mei", "Francesco Piccialli", "Salvatore Cuomo", "Jingzhi Tu", "Zenan Huo"]
+publisher = "Computer Science Review, 37"
+year = 2020
+subject = ""
+format = "pdf"
+licence = "CC BY-NC-ND 4.0"
+licence_url = "https://creativecommons.org/licenses/by-nc-nd/4.0/"
+page = "https://doi.org/10.1016/j.cosrev.2020.100254"
+download = "https://www.sciencedirect.com/science/article/pii/S157401372030071X/pdf"
+revision = "2020-08"
+size_mb = 1.4
+
+[[texts]]
+id = "modelingtoolkit"
+reference = "MGALS...2021a"
+title = "ModelingToolkit: A Composable Graph Transformation System for Equation-Based Modeling"
+type = "Article"
+edition = "arXiv version 3"
+authors = ["Yingbo Ma", "Shashi Gowda", "Ranjan Anantharaman", "Chris Laughman", "Viral Shah", "Christopher Rackauckas"]
+publisher = "arXiv, 2103.05244"
+year = 2021
+subject = "Ordinary differential equations (MSC 34)"
+format = "pdf"
+licence = "CC BY-NC-ND 4.0"
+licence_url = "https://creativecommons.org/licenses/by-nc-nd/4.0/"
+page = "https://arxiv.org/abs/2103.05244"
+download = "https://arxiv.org/pdf/2103.05244v3"
+revision = "v3"
+size_mb = 0.6
+
+[[texts]]
+id = "structuralidentifiability_tutorial"
+reference = "LSTC2025a"
+title = "A Tutorial on Structural Identifiability of Epidemic Models Using StructuralIdentifiability.jl"
+type = "Article"
+edition = "arXiv version 5"
+authors = ["Yuganthi R. Liyanage", "Omar Saucedo", "Necibe Tuncer", "Gerardo Chowell"]
+publisher = "arXiv, 2505.10517"
+year = 2025
+subject = ""
+format = "pdf"
+licence = "CC BY 4.0"
+licence_url = "https://creativecommons.org/licenses/by/4.0/"
+page = "https://arxiv.org/abs/2505.10517"
+download = "https://arxiv.org/pdf/2505.10517v5"
+revision = "v5"
+size_mb = 1.2
+
+[[texts]]
+id = "infiniteopt"
+reference = "PZHZ2022a"
+title = "A unifying modeling abstraction for infinite-dimensional optimization"
+type = "Article"
+edition = "arXiv version 2"
+authors = ["J. A. Pulsipher", "W. Zhang", "T. J. Hongisto", "V. M. Zavala"]
+publisher = "arXiv, 2106.12689"
+year = 2022
+subject = ""
+format = "pdf"
+licence = "CC BY 4.0"
+licence_url = "https://creativecommons.org/licenses/by/4.0/"
+page = "https://arxiv.org/abs/2106.12689"
+download = "https://arxiv.org/pdf/2106.12689v2"
+revision = "v2"
+size_mb = 5.2
+
+[[texts]]
+id = "agents"
+reference = "DVD2022a"
+title = "Agents.jl: A performant and feature-full agent based modelling software of minimal code complexity"
+type = "Article"
+edition = "Published version"
+authors = ["George Datseris", "Ali R. Vahdati", "Timothy C. DuBois"]
+publisher = "SIMULATION, 100 (10)"
+year = 2022
+subject = ""
+format = "pdf"
+licence = "CC BY 4.0"
+licence_url = "https://creativecommons.org/licenses/by/4.0/"
+page = "https://doi.org/10.1177/00375497211068820"
+download = "https://journals.sagepub.com/doi/pdf/10.1177/00375497211068820"
+revision = "2022-01-05"
+size_mb = 1.4
+
+[[texts]]
+id = "archmodels"
+reference = "BP2023a"
+title = "ARCHModels.jl: Estimating ARCH Models in Julia"
+type = "Article"
+edition = "Published version"
+authors = ["Simon A. Broda", "Marc S. Paolella"]
+publisher = "Journal of Statistical Software, 107 (5)"
+year = 2023
+subject = ""
+format = "pdf"
+licence = "CC BY 3.0"
+licence_url = "https://creativecommons.org/licenses/by/3.0/"
+page = "https://doi.org/10.18637/jss.v107.i05"
+download = "https://www.jstatsoft.org/index.php/jss/article/download/v107i05/4498"
+revision = "2023-09"
+size_mb = 0.7
+
+[[texts]]
+id = "betaml"
+reference = "Lob2021a"
+title = "BetaML: The Beta Machine Learning Toolkit, a Self-Contained Repository of Machine Learning Algorithms in Julia"
+type = "Article"
+edition = "Published version"
+authors = ["A. Lobianco"]
+publisher = "Journal of Open Source Software, 6 (60)"
+year = 2021
+subject = ""
+format = "pdf"
+licence = "CC BY 4.0"
+licence_url = "https://creativecommons.org/licenses/by/4.0/"
+page = "https://doi.org/10.21105/joss.02849"
+download = "https://joss.theoj.org/papers/10.21105/joss.02849.pdf"
+revision = "2021-04-30"
+size_mb = 0.2
+
+[[texts]]
+id = "catalyst"
+reference = "LMIGK...2023a"
+title = "Catalyst: Fast and Flexible Modeling of Reaction Networks"
+type = "Article"
+edition = "Published version"
+authors = ["Torkel E. Loman", "Yingbo Ma", "Vasily Ilin", "Shashi Gowda", "Niklas Korsbo", "Nikhil Yewale", "Christopher Rackauckas", "Samuel A. Isaacson"]
+publisher = "PLOS Computational Biology, 19 (10)"
+year = 2023
+subject = ""
+format = "pdf"
+licence = "CC BY 4.0"
+licence_url = "https://creativecommons.org/licenses/by/4.0/"
+page = "https://doi.org/10.1371/journal.pcbi.1011530"
+download = "https://journals.plos.org/ploscompbiol/article/file?id=10.1371/journal.pcbi.1011530&type=printable"
+revision = "2023-10-18"
+size_mb = 2.9
+
+[[texts]]
+id = "complexitymeasures"
+reference = "DH2025a"
+title = "ComplexityMeasures.jl: Scalable software to unify and accelerate entropy and complexity timeseries analysis"
+type = "Article"
+edition = "Published version"
+authors = ["George Datseris", "Kristian Agasøster Haaga"]
+publisher = "PLOS One, 20 (6)"
+year = 2025
+subject = ""
+format = "pdf"
+licence = "CC BY 4.0"
+licence_url = "https://creativecommons.org/licenses/by/4.0/"
+page = "https://doi.org/10.1371/journal.pone.0324431"
+download = "https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0324431&type=printable"
+revision = "2025-06-13"
+size_mb = 1.8
+
+[[texts]]
+id = "hypatia_jordan_algebras"
+reference = "CKV2021a"
+title = "Conic optimization with spectral functions on Euclidean Jordan algebras"
+type = "Article"
+edition = "arXiv version 2"
+authors = ["Chris Coey", "Lea Kapelevich", "Juan Pablo Vielma"]
+publisher = "arXiv, 2103.04104"
+year = 2021
+subject = ""
+format = "pdf"
+licence = "CC BY 4.0"
+licence_url = "https://creativecommons.org/licenses/by/4.0/"
+page = "https://arxiv.org/abs/2103.04104"
+download = "https://arxiv.org/pdf/2103.04104v2"
+revision = "v2"
+size_mb = 0.6
+
+[[texts]]
+id = "copulas"
+reference = "LJ2024a"
+title = "Copulas.jl: A fully Distributions.jl-compliant copula package"
+type = "Article"
+edition = "Published version"
+authors = ["Oskar Laverny", "Santiago Jimenez"]
+publisher = "Journal of Open Source Software, 9 (94)"
+year = 2024
+subject = ""
+format = "pdf"
+licence = "CC BY 4.0"
+licence_url = "https://creativecommons.org/licenses/by/4.0/"
+page = "https://doi.org/10.21105/joss.06189"
+download = "https://joss.theoj.org/papers/10.21105/joss.06189.pdf"
+revision = "2024-02-29"
+size_mb = 0.3
+
+[[texts]]
+id = "cosmo"
+reference = "GCG2021a"
+title = "COSMO: A Conic Operator Splitting Method for Convex Conic Problems"
+type = "Article"
+edition = "Published version"
+authors = ["Michael Garstka", "Mark Cannon", "Paul Goulart"]
+publisher = "Journal of Optimization Theory and Applications, 190 (3)"
+year = 2021
+subject = "Calculus of variations and optimal control; optimization (MSC 49)"
+format = "pdf"
+licence = "CC BY 4.0"
+licence_url = "https://creativecommons.org/licenses/by/4.0/"
+page = "https://doi.org/10.1007/s10957-021-01896-x"
+download = "https://link.springer.com/content/pdf/10.1007/s10957-021-01896-x.pdf"
+revision = "2021-08-29"
+size_mb = 1.0
+
+[[texts]]
+id = "differentialequations"
+reference = "RN2017a"
+title = "DifferentialEquations.jl: A Performant and Feature-Rich Ecosystem for Solving Differential Equations in Julia"
+type = "Article"
+edition = "Published version"
+authors = ["Christopher Rackauckas", "Qing Nie"]
+publisher = "Journal of Open Research Software, 5 (1)"
+year = 2017
+subject = ""
+format = "pdf"
+licence = "CC BY 4.0"
+licence_url = "https://creativecommons.org/licenses/by/4.0/"
+page = "https://doi.org/10.5334/jors.151"
+download = "https://openresearchsoftware.metajnl.com/articles/10.5334/jors.151"
+revision = "2017-05-25"
+size_mb = 1.3
+
+[[texts]]
+id = "distributions"
+reference = "BPAAB...2021a"
+title = "Distributions.jl: Definition and Modeling of Probability Distributions in the JuliaStats Ecosystem"
+type = "Article"
+edition = "Published version"
+authors = ["Mathieu Besançon", "Theodore Papamarkou", "David Anthoff", "Alex Arslan", "Simon Byrne", "Dahua Lin", "John Pearson"]
+publisher = "Journal of Statistical Software, 98 (16)"
+year = 2021
+subject = ""
+format = "pdf"
+licence = "CC BY 3.0"
+licence_url = "https://creativecommons.org/licenses/by/3.0/"
+page = "https://doi.org/10.18637/jss.v098.i16"
+download = "https://www.jstatsoft.org/index.php/jss/article/view/v098i16/4384"
+revision = "2021-07"
+size_mb = 0.9
+
+[[texts]]
+id = "dynamicalsystems"
+reference = "Dat2018a"
+title = "DynamicalSystems.jl: A Julia software library for chaos and nonlinear dynamics"
+type = "Article"
+edition = "Published version"
+authors = ["George Datseris"]
+publisher = "Journal of Open Source Software, 3 (23)"
+year = 2018
+subject = ""
+format = "pdf"
+licence = "CC BY 4.0"
+licence_url = "https://creativecommons.org/licenses/by/4.0/"
+page = "https://doi.org/10.21105/joss.00598"
+download = "https://joss.theoj.org/papers/10.21105/joss.00598.pdf"
+revision = "2018-03-14"
+size_mb = 0.2
+
+[[texts]]
+id = "symbolics_hash_consing"
+reference = "ZSTME...2025a"
+title = "Efficient Symbolic Computation via Hash Consing"
+type = "Article"
+edition = "arXiv version 2"
+authors = ["Bowen Zhu", "Aayush Sabharwal", "Songchen Tan", "Yingbo Ma", "Alan Edelman", "Christopher Rackauckas"]
+publisher = "arXiv, 2509.20534"
+year = 2025
+subject = ""
+format = "pdf"
+licence = "CC BY 4.0"
+licence_url = "https://creativecommons.org/licenses/by/4.0/"
+page = "https://arxiv.org/abs/2509.20534"
+download = "https://arxiv.org/pdf/2509.20534v2"
+revision = "v2"
+size_mb = 0.7
+
+[[texts]]
+id = "jumpprocesses"
+reference = "ZIRIN...2024a"
+title = "Extending JumpProcesses.jl for Fast Point Process Simulation with Time-Varying Intensities"
+type = "Article"
+edition = "Published version"
+authors = ["Guilherme Zagatti", "Samuel Isaacson", "Christopher Rackauckas", "Vasily Ilin", "See-Kiong Ng", "Stéphane Bressan"]
+publisher = "JuliaCon Proceedings, 6 (58)"
+year = 2024
+subject = ""
+format = "pdf"
+licence = "CC BY 4.0"
+licence_url = "https://creativecommons.org/licenses/by/4.0/"
+page = "https://doi.org/10.21105/jcon.00133"
+download = "https://proceedings.juliacon.org/papers/10.21105/jcon.00133.pdf"
+revision = "2024-04-23"
+size_mb = 1.7
+
+[[texts]]
+id = "extremes"
+reference = "JFGR2024a"
+title = "Extremes.jl: Extreme Value Analysis in Julia"
+type = "Article"
+edition = "Published version"
+authors = ["J. Jalbert", "M. Farmer", "G. Gobeil", "P. Roy"]
+publisher = "Journal of Statistical Software, 109 (6)"
+year = 2024
+subject = ""
+format = "pdf"
+licence = "CC BY 3.0"
+licence_url = "https://creativecommons.org/licenses/by/3.0/"
+page = "https://doi.org/10.18637/jss.v109.i06"
+download = "https://www.jstatsoft.org/index.php/jss/article/view/v109i06/4790"
+revision = "2024-05"
+size_mb = 1.2
+
+[[texts]]
+id = "flux"
+reference = "Inn2018a"
+title = "Flux: Elegant Machine Learning with Julia"
+type = "Article"
+edition = "Published version"
+authors = ["Mike Innes"]
+publisher = "Journal of Open Source Software, 3 (25)"
+year = 2018
+subject = ""
+format = "pdf"
+licence = "CC BY 4.0"
+licence_url = "https://creativecommons.org/licenses/by/4.0/"
+page = "https://doi.org/10.21105/joss.00602"
+download = "https://joss.theoj.org/papers/10.21105/joss.00602.pdf"
+revision = "2018-05-03"
+size_mb = 0.1
+
+[[texts]]
+id = "frankwolfe"
+reference = "BCP2022a"
+title = "FrankWolfe.jl: A High-Performance and Flexible Toolbox for Frank-Wolfe Algorithms and Conditional Gradients"
+type = "Article"
+edition = "arXiv version 2"
+authors = ["Mathieu Besançon", "Alejandro Carderera", "Sebastian Pokutta"]
+publisher = "arXiv, 2104.06675"
+year = 2022
+subject = ""
+format = "pdf"
+licence = "CC BY 4.0"
+licence_url = "https://creativecommons.org/licenses/by/4.0/"
+page = "https://arxiv.org/abs/2104.06675"
+download = "https://arxiv.org/pdf/2104.06675v2"
+revision = "v2"
+size_mb = 3.0
+
+[[texts]]
+id = "gridap"
+reference = "BV2020a"
+title = "Gridap: An extensible Finite Element toolbox in Julia"
+type = "Article"
+edition = "Published version"
+authors = ["Santiago Badia", "Francesc Verdugo"]
+publisher = "Journal of Open Source Software, 5 (52)"
+year = 2020
+subject = ""
+format = "pdf"
+licence = "CC BY 4.0"
+licence_url = "https://creativecommons.org/licenses/by/4.0/"
+page = "https://doi.org/10.21105/joss.02520"
+download = "https://joss.theoj.org/papers/10.21105/joss.02520.pdf"
+revision = "2020-08-26"
+size_mb = 0.2
+
+[[texts]]
+id = "symbolics"
+reference = "GMCGS...2022a"
+title = "High-performance symbolic-numerics via multiple dispatch"
+type = "Article"
+edition = "arXiv version 3"
+authors = ["Shashi Gowda", "Yingbo Ma", "Alessandro Cheli", "Maja Gwóźdź", "Viral B. Shah", "Alan Edelman", "Christopher Rackauckas"]
+publisher = "arXiv, 2105.03949"
+year = 2022
+subject = ""
+format = "pdf"
+licence = "CC BY-NC-ND 4.0"
+licence_url = "https://creativecommons.org/licenses/by-nc-nd/4.0/"
+page = "https://arxiv.org/abs/2105.03949"
+download = "https://arxiv.org/pdf/2105.03949v3"
+revision = "v3"
+size_mb = 0.3
+
+[[texts]]
+id = "symbolic_numeric_integration"
+reference = "IGR2024a"
+title = "Hybrid Symbolic-Numeric and Numerically-Assisted Symbolic Integration"
+type = "Article"
+edition = "Published version"
+authors = ["Shahriar Iravanian", "Shashi Gowda", "Christopher Rackauckas"]
+publisher = "Proceedings of the 2024 International Symposium on Symbolic and Algebraic Computation"
+year = 2024
+subject = "Computing methodologies (ACM CCS)"
+format = "pdf"
+licence = "CC BY 4.0"
+licence_url = "https://creativecommons.org/licenses/by/4.0/"
+page = "https://doi.org/10.1145/3666000.3669714"
+download = "https://dl.acm.org/doi/pdf/10.1145/3666000.3669714"
+revision = "2024-07-16"
+size_mb = 0.7
+
+[[texts]]
+id = "frankwolfe_improved"
+reference = "BDHHK...2025a"
+title = "Improved algorithms and novel applications of the FrankWolfe.jl library"
+type = "Article"
+edition = "arXiv version 2"
+authors = ["Mathieu Besançon", "Sébastien Designolle", "Jannis Halbey", "Deborah Hendrych", "Dominik Kuzinowicz", "Sebastian Pokutta", "Hannah Troppens", "Daniel Viladrich Herrmannsdoerfer", "Elias Wirth"]
+publisher = "arXiv, 2501.14613"
+year = 2025
+subject = ""
+format = "pdf"
+licence = "CC BY 4.0"
+licence_url = "https://creativecommons.org/licenses/by/4.0/"
+page = "https://arxiv.org/abs/2501.14613"
+download = "https://arxiv.org/pdf/2501.14613v2"
+revision = "v2"
+size_mb = 0.6
+
+[[texts]]
+id = "krylov"
+reference = "MO2023a"
+title = "Krylov.jl: A Julia basket of hand-picked Krylov methods"
+type = "Article"
+edition = "Published version"
+authors = ["Alexis Montoison", "Dominique Orban"]
+publisher = "Journal of Open Source Software, 8 (89)"
+year = 2023
+subject = ""
+format = "pdf"
+licence = "CC BY 4.0"
+licence_url = "https://creativecommons.org/licenses/by/4.0/"
+page = "https://doi.org/10.21105/joss.05187"
+download = "https://joss.theoj.org/papers/10.21105/joss.05187.pdf"
+revision = "2023-09-26"
+size_mb = 0.3
+
+[[texts]]
+id = "likelihoodprofiler"
+reference = "BDM2026a"
+title = "LikelihoodProfiler.jl: Unified profile-likelihood workflows for identifiability and confidence intervals"
+type = "Article"
+edition = "Published version"
+authors = ["Ivan Borisov", "Aleksander Demin", "Evgeny Metelkin"]
+publisher = "Journal of Open Source Software, 11 (117)"
+year = 2026
+subject = ""
+format = "pdf"
+licence = "CC BY 4.0"
+licence_url = "https://creativecommons.org/licenses/by/4.0/"
+page = "https://doi.org/10.21105/joss.09501"
+download = "https://joss.theoj.org/papers/10.21105/joss.09501.pdf"
+revision = "2026-01-20"
+size_mb = 1.3
+
+[[texts]]
+id = "macromodelling"
+reference = "Koc2023a"
+title = "MacroModelling.jl: A Julia package for developing and solving dynamic stochastic general equilibrium models"
+type = "Article"
+edition = "Published version"
+authors = ["Thore Kockerols"]
+publisher = "Journal of Open Source Software, 8 (89)"
+year = 2023
+subject = ""
+format = "pdf"
+licence = "CC BY 4.0"
+licence_url = "https://creativecommons.org/licenses/by/4.0/"
+page = "https://doi.org/10.21105/joss.05598"
+download = "https://joss.theoj.org/papers/10.21105/joss.05598.pdf"
+revision = "2023-09-25"
+size_mb = 0.3
+
+[[texts]]
+id = "makie"
+reference = "DK2021a"
+title = "Makie.jl: Flexible high-performance data visualization for Julia"
+type = "Article"
+edition = "Published version"
+authors = ["Simon Danisch", "Julius Krumbiegel"]
+publisher = "Journal of Open Source Software, 6 (65)"
+year = 2021
+subject = ""
+format = "pdf"
+licence = "CC BY 4.0"
+licence_url = "https://creativecommons.org/licenses/by/4.0/"
+page = "https://doi.org/10.21105/joss.03349"
+download = "https://joss.theoj.org/papers/10.21105/joss.03349.pdf"
+revision = "2021-09-01"
+size_mb = 0.6
+
+[[texts]]
+id = "manifolds"
+reference = "ABBR2023a"
+title = "Manifolds.jl: An Extensible Julia Framework for Data Analysis on Manifolds"
+type = "Article"
+edition = "Published version"
+authors = ["Seth D. Axen", "Mateusz Baran", "Ronny Bergmann", "Krzysztof Rzecki"]
+publisher = "ACM Transactions on Mathematical Software, 49 (4)"
+year = 2023
+subject = "Software and its engineering (ACM CCS)"
+format = "pdf"
+licence = "CC BY 4.0"
+licence_url = "https://creativecommons.org/licenses/by/4.0/"
+page = "https://doi.org/10.1145/3618296"
+download = "https://dl.acm.org/doi/pdf/10.1145/3618296"
+revision = "2023-12-15"
+size_mb = 2.0
+
+[[texts]]
+id = "manopt"
+reference = "Ber2022a"
+title = "Manopt.jl: Optimization on Manifolds in Julia"
+type = "Article"
+edition = "Published version"
+authors = ["Ronny Bergmann"]
+publisher = "Journal of Open Source Software, 7 (70)"
+year = 2022
+subject = ""
+format = "pdf"
+licence = "CC BY 4.0"
+licence_url = "https://creativecommons.org/licenses/by/4.0/"
+page = "https://doi.org/10.21105/joss.03866"
+download = "https://joss.theoj.org/papers/10.21105/joss.03866.pdf"
+revision = "2022-02-10"
+size_mb = 0.3
+
+[[texts]]
+id = "marswitching"
+reference = "Dad2024a"
+title = "MarSwitching.jl: A Julia package for Markov switching dynamic models"
+type = "Article"
+edition = "Published version"
+authors = ["Mateusz Dadej"]
+publisher = "Journal of Open Source Software, 9 (98)"
+year = 2024
+subject = ""
+format = "pdf"
+licence = "CC BY 4.0"
+licence_url = "https://creativecommons.org/licenses/by/4.0/"
+page = "https://doi.org/10.21105/joss.06441"
+download = "https://joss.theoj.org/papers/10.21105/joss.06441.pdf"
+revision = "2024-06-14"
+size_mb = 0.4
+
+[[texts]]
+id = "metaheuristics"
+reference = "MM2022a"
+title = "Metaheuristics: A Julia Package for Single- and Multi-Objective Optimization"
+type = "Article"
+edition = "Published version"
+authors = ["Jesús-Adolfo Mejía-de-Dios", "Efrén Mezura-Montes"]
+publisher = "Journal of Open Source Software, 7 (78)"
+year = 2022
+subject = ""
+format = "pdf"
+licence = "CC BY 4.0"
+licence_url = "https://creativecommons.org/licenses/by/4.0/"
+page = "https://doi.org/10.21105/joss.04723"
+download = "https://joss.theoj.org/papers/10.21105/joss.04723.pdf"
+revision = "2022-10-26"
+size_mb = 0.3
+
+[[texts]]
+id = "mlj"
+reference = "BKLSA...2020a"
+title = "MLJ: A Julia Package for Composable Machine Learning"
+type = "Article"
+edition = "Published version"
+authors = ["A.D. Blaom", "F. Kiraly", "T. Lienart", "Yiannis Simillides", "Diego Arenas", "Sebastian Vollmer"]
+publisher = "Journal of Open Source Software, 5 (55)"
+year = 2020
+subject = ""
+format = "pdf"
+licence = "CC BY 4.0"
+licence_url = "https://creativecommons.org/licenses/by/4.0/"
+page = "https://doi.org/10.21105/joss.02704"
+download = "https://joss.theoj.org/papers/10.21105/joss.02704.pdf"
+revision = "2020-11-07"
+size_mb = 0.2
+
+[[texts]]
+id = "modelpredictivecontrol"
+reference = "GTDC2024a"
+title = "ModelPredictiveControl.jl: Advanced Process Control Made Easy in Julia"
+type = "Article"
+edition = "arXiv version 4"
+authors = ["Francis Gagnon", "Alex Thivierge", "André Desbiens", "Fredrik Bagge Carlson"]
+publisher = "arXiv, 2411.09764"
+year = 2024
+subject = ""
+format = "pdf"
+licence = "CC BY 4.0"
+licence_url = "https://creativecommons.org/licenses/by/4.0/"
+page = "https://arxiv.org/abs/2411.09764"
+download = "https://arxiv.org/pdf/2411.09764v4"
+revision = "v4"
+size_mb = 0.8
+
+[[texts]]
+id = "nolimits"
+reference = "HASGW...2026a"
+title = "NoLimits.jl: Flexible and Composable Nonlinear Mixed-Effects Modeling in Julia"
+type = "Article"
+edition = "arXiv version 1"
+authors = ["Manuel Huth", "Jonas Arruda", "Nina Schmid", "Roy Gusinow", "Vincent Wieland", "Clemens Peiter", "Jan Hasenauer"]
+publisher = "arXiv, 2606.24427"
+year = 2026
+subject = ""
+format = "pdf"
+licence = "CC BY 4.0"
+licence_url = "https://creativecommons.org/licenses/by/4.0/"
+page = "https://arxiv.org/abs/2606.24427"
+download = "https://arxiv.org/pdf/2606.24427v1"
+revision = "v1"
+size_mb = 4.4
+
+[[texts]]
+id = "nonlinearsolve"
+reference = "PHLLU...2024a"
+title = "NonlinearSolve.jl: High-Performance and Robust Solvers for Systems of Nonlinear Equations in Julia"
+type = "Article"
+edition = "arXiv version 3"
+authors = ["Avik Pal", "Flemming Holtorf", "Axel Larsson", "Torkel Loman", "Utkarsh", "Frank Schäfer", "Qingyu Qu", "Alan Edelman", "Chris Rackauckas"]
+publisher = "arXiv, 2403.16341"
+year = 2024
+subject = "Mathematics of computing (ACM CCS)"
+format = "pdf"
+licence = "CC BY 4.0"
+licence_url = "https://creativecommons.org/licenses/by/4.0/"
+page = "https://arxiv.org/abs/2403.16341"
+download = "https://arxiv.org/pdf/2403.16341v3"
+revision = "v3"
+size_mb = 2.5
+
+[[texts]]
+id = "structuralidentifiability_observables"
+reference = "DPR2026a"
+title = "Observable functions of rational ODE models and how to find them"
+type = "Article"
+edition = "arXiv version 3"
+authors = ["Alexander Demin", "Gleb Pogudin", "Christopher Rackauckas"]
+publisher = "arXiv, 2609.06134"
+year = 2026
+subject = ""
+format = "pdf"
+licence = "CC BY 4.0"
+licence_url = "https://creativecommons.org/licenses/by/4.0/"
+page = "https://arxiv.org/abs/2609.06134"
+download = "https://arxiv.org/pdf/2609.06134v3"
+revision = "v3"
+size_mb = 0.5
+
+[[texts]]
+id = "onlinestats"
+reference = "DZ2020a"
+title = "OnlineStats.jl: A Julia package for statistics on data streams"
+type = "Article"
+edition = "Published version"
+authors = ["Josh Day", "Hua Zhou"]
+publisher = "Journal of Open Source Software, 5 (46)"
+year = 2020
+subject = ""
+format = "pdf"
+licence = "CC BY 4.0"
+licence_url = "https://creativecommons.org/licenses/by/4.0/"
+page = "https://doi.org/10.21105/joss.01816"
+download = "https://joss.theoj.org/papers/10.21105/joss.01816.pdf"
+revision = "2020-02-10"
+size_mb = 0.1
+
+[[texts]]
+id = "optim"
+reference = "MR2018a"
+title = "Optim: A mathematical optimization package for Julia"
+type = "Article"
+edition = "Published version"
+authors = ["Patrick Kofod Mogensen", "Asbjorn Nilsen Riseth"]
+publisher = "Journal of Open Source Software, 3 (24)"
+year = 2018
+subject = ""
+format = "pdf"
+licence = "CC BY 4.0"
+licence_url = "https://creativecommons.org/licenses/by/4.0/"
+page = "https://doi.org/10.21105/joss.00615"
+download = "https://joss.theoj.org/papers/10.21105/joss.00615.pdf"
+revision = "2018-04-04"
+size_mb = 0.1
+
+[[texts]]
+id = "outlierdetection"
+reference = "MA2022a"
+title = "OutlierDetection.jl: A Modular Outlier Detection Ecosystem for the Julia Programming Language"
+type = "Article"
+edition = "arXiv version 1"
+authors = ["David Muhr", "Michael Affenzeller"]
+publisher = "arXiv, 2211.04550"
+year = 2022
+subject = ""
+format = "pdf"
+licence = "CC BY-SA 4.0"
+licence_url = "https://creativecommons.org/licenses/by-sa/4.0/"
+page = "https://arxiv.org/abs/2211.04550"
+download = "https://arxiv.org/pdf/2211.04550v1"
+revision = "v1"
+size_mb = 0.4
+
+[[texts]]
+id = "pathogen"
+reference = "AFD2022a"
+title = "Pathogen.jl: Infectious Disease Transmission Network Modeling with Julia"
+type = "Article"
+edition = "Published version"
+authors = ["Justin Angevaare", "Zeny Feng", "Rob Deardon"]
+publisher = "Journal of Statistical Software, 104 (4)"
+year = 2022
+subject = ""
+format = "pdf"
+licence = "CC BY 3.0"
+licence_url = "https://creativecommons.org/licenses/by/3.0/"
+page = "https://doi.org/10.18637/jss.v104.i04"
+download = "https://www.jstatsoft.org/index.php/jss/article/download/v104i04/4386"
+revision = "2022-09"
+size_mb = 1.8
+
+[[texts]]
+id = "hypatia_interior_point"
+reference = "CKV2023a"
+title = "Performance enhancements for a generic conic interior point algorithm"
+type = "Article"
+edition = "Published version"
+authors = ["Chris Coey", "Lea Kapelevich", "Juan Pablo Vielma"]
+publisher = "Mathematical Programming Computation, 15 (1)"
+year = 2023
+subject = "Operations research, mathematical programming (MSC 90)"
+format = "pdf"
+licence = "CC BY 4.0"
+licence_url = "https://creativecommons.org/licenses/by/4.0/"
+page = "https://doi.org/10.1007/s12532-022-00226-0"
+download = "https://link.springer.com/content/pdf/10.1007/s12532-022-00226-0.pdf"
+revision = "2022-09-17"
+size_mb = 1.0
+
+[[texts]]
+id = "petab"
+reference = "PFGLO...2025a"
+title = "PEtab.jl: Advancing the Efficiency and Utility of Dynamic Modelling"
+type = "Article"
+edition = "Published version"
+authors = ["Sebastian Persson", "Fabian Fröhlich", "Stephan Grein", "Torkel Loman", "Damiano Ognissanti", "Viktor Hasselgren", "Jan Hasenauer", "Marija Cvijovic"]
+publisher = "Bioinformatics, 41 (9)"
+year = 2025
+subject = ""
+format = "pdf"
+licence = "CC BY 4.0"
+licence_url = "https://creativecommons.org/licenses/by/4.0/"
+page = "https://doi.org/10.1093/bioinformatics/btaf497"
+download = "https://academic.oup.com/bioinformatics/article-pdf/41/9/btaf497"
+revision = "2025-09-09"
+size_mb = 1.4
+
+[[texts]]
+id = "reactive_message_passing"
+reference = "BV2023a"
+title = "Reactive Message Passing for Scalable Bayesian Inference"
+type = "Article"
+edition = "arXiv version 1"
+authors = ["Dmitry Bagaev", "Bert de Vries"]
+publisher = "arXiv, 2112.13251"
+year = 2023
+subject = ""
+format = "pdf"
+licence = "CC BY-NC-SA 4.0"
+licence_url = "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+page = "https://arxiv.org/abs/2112.13251"
+download = "https://arxiv.org/pdf/2112.13251v1"
+revision = "v1"
+size_mb = 0.9
+
+[[texts]]
+id = "reactivemp"
+reference = "BEPV2022a"
+title = "ReactiveMP.jl: A Julia package for reactive variational Bayesian inference"
+type = "Article"
+edition = "Published version"
+authors = ["Dmitry Bagaev", "Bart van Erp", "Albert Podusenko", "Bert de Vries"]
+publisher = "Software Impacts, 12"
+year = 2022
+subject = ""
+format = "pdf"
+licence = "CC BY-NC-ND 4.0"
+licence_url = "https://creativecommons.org/licenses/by-nc-nd/4.0/"
+page = "https://doi.org/10.1016/j.simpa.2022.100299"
+download = "https://www.sciencedirect.com/science/article/pii/S2665963822000422/pdf"
+revision = "2022-05"
+size_mb = 0.5
+
+[[texts]]
+id = "rxinfer"
+reference = "BPV2023a"
+title = "RxInfer: A Julia Package for Reactive Real-Time Bayesian Inference"
+type = "Article"
+edition = "Published version"
+authors = ["Dmitry Bagaev", "Albert Podusenko", "Bert de Vries"]
+publisher = "Journal of Open Source Software, 8 (84)"
+year = 2023
+subject = ""
+format = "pdf"
+licence = "CC BY 4.0"
+licence_url = "https://creativecommons.org/licenses/by/4.0/"
+page = "https://doi.org/10.21105/joss.05161"
+download = "https://joss.theoj.org/papers/10.21105/joss.05161.pdf"
+revision = "2023-04-20"
+size_mb = 0.5
+
+[[texts]]
+id = "sirus"
+reference = "HBH2023a"
+title = "SIRUS.jl: Interpretable Machine Learning via Rule Extraction"
+type = "Article"
+edition = "Published version"
+authors = ["Rik Huijzer", "Frank Blaauw", "Ruud J. R. den Hartigh"]
+publisher = "Journal of Open Source Software, 8 (90)"
+year = 2023
+subject = ""
+format = "pdf"
+licence = "CC BY 4.0"
+licence_url = "https://creativecommons.org/licenses/by/4.0/"
+page = "https://doi.org/10.21105/joss.05786"
+download = "https://joss.theoj.org/papers/10.21105/joss.05786.pdf"
+revision = "2023-10-12"
+size_mb = 0.3
+
+[[texts]]
+id = "hypatia"
+reference = "CKV2022a"
+title = "Solving Natural Conic Formulations with Hypatia.jl"
+type = "Article"
+edition = "arXiv version 5"
+authors = ["Chris Coey", "Lea Kapelevich", "Juan Pablo Vielma"]
+publisher = "arXiv, 2005.01136"
+year = 2022
+subject = ""
+format = "pdf"
+licence = "CC BY 4.0"
+licence_url = "https://creativecommons.org/licenses/by/4.0/"
+page = "https://arxiv.org/abs/2005.01136"
+download = "https://arxiv.org/pdf/2005.01136v5"
+revision = "v5"
+size_mb = 0.3
+
+[[texts]]
+id = "symbolic_numeric_integration_sparse_regression"
+reference = "IMCGJ...2022a"
+title = "Symbolic-Numeric Integration of Univariate Expressions Based on Sparse Regression"
+type = "Article"
+edition = "arXiv version 2"
+authors = ["Shahriar Iravanian", "Carl Julius Martensen", "Alessandro Cheli", "Shashi Gowda", "Anand Jain", "Yingbo Ma", "Chris Rackauckas"]
+publisher = "arXiv, 2201.12468"
+year = 2022
+subject = ""
+format = "pdf"
+licence = "CC BY 4.0"
+licence_url = "https://creativecommons.org/licenses/by/4.0/"
+page = "https://arxiv.org/abs/2201.12468"
+download = "https://arxiv.org/pdf/2201.12468v2"
+revision = "v2"
+size_mb = 0.2
+
+[[texts]]
+id = "taylorseries"
+reference = "BS2019a"
+title = "TaylorSeries.jl: Taylor expansions in one and several variables in Julia"
+type = "Article"
+edition = "Published version"
+authors = ["Luis Benet", "David Sanders"]
+publisher = "Journal of Open Source Software, 4 (36)"
+year = 2019
+subject = ""
+format = "pdf"
+licence = "CC BY 4.0"
+licence_url = "https://creativecommons.org/licenses/by/4.0/"
+page = "https://doi.org/10.21105/joss.01043"
+download = "https://joss.theoj.org/papers/10.21105/joss.01043.pdf"
+revision = "2019-04-07"
+size_mb = 0.4
+
+[[texts]]
+id = "gridap_software_design"
+reference = "VB2022a"
+title = "The software design of Gridap: A Finite Element package based on the Julia JIT compiler"
+type = "Article"
+edition = "Accepted version"
+authors = ["Francesc Verdugo", "Santiago Badia"]
+publisher = "Computer Physics Communications, 276"
+year = 2022
+subject = ""
+format = "pdf"
+licence = "CC BY-NC-ND 4.0"
+licence_url = "https://creativecommons.org/licenses/by-nc-nd/4.0/"
+page = "https://doi.org/10.1016/j.cpc.2022.108341"
+download = "https://hdl.handle.net/2117/430058"
+revision = "2021-09-28"
+size_mb = 2.8
+
+[[texts]]
+id = "timeseriessurrogates"
+reference = "HD2022a"
+title = "TimeseriesSurrogates.jl: a Julia package for generating surrogate data"
+type = "Article"
+edition = "Published version"
+authors = ["Kristian Agasøster Haaga", "George Datseris"]
+publisher = "Journal of Open Source Software, 7 (77)"
+year = 2022
+subject = ""
+format = "pdf"
+licence = "CC BY 4.0"
+licence_url = "https://creativecommons.org/licenses/by/4.0/"
+page = "https://doi.org/10.21105/joss.04414"
+download = "https://joss.theoj.org/papers/10.21105/joss.04414.pdf"
+revision = "2022-09-12"
+size_mb = 0.3
+
+[[texts]]
+id = "measurements"
+reference = "Gio2016a"
+title = "Uncertainty Propagation with Functionally Correlated Quantities"
+type = "Article"
+edition = "arXiv version 1"
+authors = ["Mosè Giordano"]
+publisher = "arXiv, 1610.08716"
+year = 2016
+subject = ""
+format = "pdf"
+licence = "CC BY 4.0"
+licence_url = "https://creativecommons.org/licenses/by/4.0/"
+page = "https://arxiv.org/abs/1610.08716"
+download = "https://arxiv.org/pdf/1610.08716v1"
+revision = "v1"
+size_mb = 0.1
+
+[[texts]]
+id = "recurrentlayers"
+reference = "Mar2025a"
+title = "Unified Implementations of Recurrent Neural Networks in Multiple Deep Learning Frameworks"
+type = "Article"
+edition = "arXiv version 1"
+authors = ["Francesco Martinuzzi"]
+publisher = "arXiv, 2510.21252"
+year = 2025
+subject = ""
+format = "pdf"
+licence = "CC BY 4.0"
+licence_url = "https://creativecommons.org/licenses/by/4.0/"
+page = "https://arxiv.org/abs/2510.21252"
+download = "https://arxiv.org/pdf/2510.21252v1"
+revision = "v1"
+size_mb = 0.3
